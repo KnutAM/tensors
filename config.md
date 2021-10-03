@@ -1,7 +1,7 @@
 <!--
-prepath = "tensoranalysis"
 -->
 +++
+prepath = "tensoranalysis"
 author = "Knut Andreas Meyer"
 mintoclevel = 2
 

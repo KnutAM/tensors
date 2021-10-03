@@ -1,7 +1,6 @@
 <!--
 -->
 +++
-prepath = "tensoranalysis"
 author = "Knut Andreas Meyer"
 mintoclevel = 2
 
@@ -15,7 +14,8 @@ ignore = ["node_modules/"]
 generate_rss = true
 website_title = "Tensor Analysis"
 website_descr = "Introduction to Tensor Analysis"
-website_url   = "https://knutam.github.io/TensorAnalysis/"
+prepath = "tensoranalysis"
+website_url   = "knutam.gitlab.io/"
 +++
 
 <!--

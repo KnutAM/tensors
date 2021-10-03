@@ -1,5 +1,10 @@
 <!doctype html>
+<!-- first few lines ... -->
+<script src="/libs/lunr/lunr.min.js"></script>
+<script src="/libs/lunr/lunr_index.js"></script>
+<script src="/libs/lunr/lunrclient.min.js"></script>
 <html lang="en">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -13,3 +18,8 @@
 
 
 <!-- Content appended here (in class franklin-content) -->
+
+<form id="lunrSearchForm" name="lunrSearchForm">
+  <input class="search-input" name="q" placeholder="Enter search term" type="text">
+  <input type="submit" value="Search" formaction="/search/index.html">
+</form>

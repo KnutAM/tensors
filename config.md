@@ -1,5 +1,5 @@
 <!--
-@def prepath = "tensoranalysis"
+prepath = "tensoranalysis"
 -->
 +++
 author = "Knut Andreas Meyer"

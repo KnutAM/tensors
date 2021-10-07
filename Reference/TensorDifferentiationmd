@@ -1,4 +1,6 @@
 +++
-title = "Reference 2"
+title = "Tensor differentiation"
 +++
-Reference 2
+1. Definition of tensor differentiation
+2. Chain rule
+3. Differentiation of specific tensors

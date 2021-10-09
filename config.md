@@ -22,10 +22,27 @@ website_url   = "knutam.gitlab.io/"
 <!--
 Add here global latex commands to use throughout your pages.
 -->
-\newcommand{\R}{\mathbb R}
-\newcommand{\scal}[1]{\langle #1 \rangle}
-\newcommand{\menuparent}[3]{<li class="menu-list-parent {{ispage #1/*}}active{{end}}"><a href="/#1/" class="menu-list-link {{ispage menu1}}active{{end}}">#2</a> <ul class="menu-list-child-list "> #3 </ul>}
-\newcommand{\menuchild}[2]{<li class="menu-list-item {{ispage #1}}active{{end}}"><a href="/#1/" class="menu-list-link">#2</a>}
+<!-- ENVIRONMENTS (not inside math-mode) -->
+\newcommand{\todo}[1]{}
+<!-- Uncomment to show todo-notes
+\newcommand{\todo}[1]{
+    @@todo
+        **TODO:**\\
+        #1
+    @@
+}
+-->
+\newcommand{\definition}[1]{
+    @@definition
+        **Definition:**\\
+        #1
+    @@
+}
+
+<!-- MATH (only inside math-mode) -->
+<!-- Set -->
+\newcommand{\set}[1]{\mathbb{#1}}
+\newcommand{\REAL}{\set{R}}
 
 <!-- Tensors -->
 \newcommand{\ta}[1]{\boldsymbol{#1}}

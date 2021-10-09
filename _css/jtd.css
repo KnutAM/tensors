@@ -646,4 +646,17 @@ franklin-toc {
   /* Avoid clickable elements being too close together. */
   margin: 0.6rem 0;
 }
+/*} The "}" was here at the end but seems wrong and no harm when removed....*/
+
+.todo {
+  background-color: lightblue;
+  padding: 0.5em;
+  margin-bottom: 1em;
+  font-style: italic;
+}
+
+.definition {
+  background-color: #fdffe1;
+  padding: 0.5em;
+  margin-bottom: 1em;
 }

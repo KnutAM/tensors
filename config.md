@@ -40,12 +40,21 @@ Add here global latex commands to use throughout your pages.
 }
 
 <!-- MATH (only inside math-mode) -->
+\newcommand{\norm}[1]{\left\vert\left\vert#1\right\vert\right\vert}
+\newcommand{\mat}[1]{\boldsymbol{#1}} <!-- matrix -->
+
 <!-- Set -->
 \newcommand{\set}[1]{\mathbb{#1}}
 \newcommand{\REAL}{\set{R}}
 
 <!-- Tensors -->
-\newcommand{\ta}[1]{\boldsymbol{#1}}
+\newcommand{\ta}[1]{\textcolor{red}{\mathrm{DEPRECIATED}}\boldsymbol{#1}}
+\newcommand{\tv}[1]{\boldsymbol{#1}}
+\newcommand{\ts}[1]{\boldsymbol{#1}}
+\newcommand{\tf}[1]{\boldsymbol{\mathsf{#1}}}
+
+<!-- Special products -->
+
 
 <!-- Colors -->
 \newcommand{\red}[1]{\textcolor{red}{#1}}

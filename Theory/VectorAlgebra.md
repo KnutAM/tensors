@@ -4,7 +4,7 @@ title = "Vector algebra"
 
 # Vector algebra
 In physics, vectors describe quantities that have a magnitude and a spatial direction, such as a position, a velocity, and a temperature gradient. 
-We will later see that these vectors are, in fact, first order tensors. But for now, let's cover the basic rules of vector algebra as an introduction.
+We will later see that these vectors are, in fact, basically first order tensors. But for now, let's cover the basic rules of vector algebra as an introduction.
 
 Consider the vectors $\tv{x}$, $\tv{u}$, $\tv{v}$, and $\tv{w}$ in the figure below.
 

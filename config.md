@@ -57,10 +57,10 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\twobase}[2]{\tv{e}_#1\otimes\tv{e}_{#2}}
 \newcommand{\fourbase}[4]{\tv{e}_#1\otimes\tv{e}_{#2}\otimes\tv{e}_{#3}\otimes\tv{e}_{#4}}
 \newcommand{\ta}[1]{\textcolor{red}{\mathrm{DEPRECIATED}}\boldsymbol{#1}}
-\newcommand{\tv}[1]{\boldsymbol{#1}}
+\newcommand{\tv}[1]{\underline{\boldsymbol{#1}}}
 \newcommand{\ts}[1]{\boldsymbol{#1}}
-\newcommand{\tf}[1]{\boldsymbol{\mathsf{#1}}}
-\newcommand{\tfind}[2]{\mathsf{#1}_{#2}}
+\newcommand{\tf}[1]{\textbf{\textsf{#1}}}
+\newcommand{\tfind}[2]{\textsf{#1}_{#2}}
 
 \newcommand{\trans}{^{\mathrm{t}}}
 \newcommand{\Trans}{^{\mathrm{T}}}

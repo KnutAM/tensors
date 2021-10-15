@@ -45,6 +45,6 @@ The reason that the last relation is not equal for all $\ts{a}$, is that we cont
 
 If we instead would look at a sum, we can consider $\tf{A}:\left[\ts{b} + \ts{c}\right]$,
 \begin{align}
-A_{ijkl}\left[b_{kl} + c_{kl}\right] = A_{ijkl} b_{kl} + A_{ijkl} c_{kl}
+\tfind{A}{ijkl}\left[b_{kl} + c_{kl}\right] = \tfind{A}{ijkl} b_{kl} + \tfind{A}{ijkl} c_{kl}
 \end{align}
 Which holds as we are only considering summation and multiplication when working with the indices, i.e. $\tf{A}:\left[\ts{b} + \ts{c}\right]=\tf{A}:\ts{b} + \tf{A}:\ts{c}$

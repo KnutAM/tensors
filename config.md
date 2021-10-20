@@ -41,6 +41,7 @@ Add here global latex commands to use throughout your pages.
 
 <!-- MATH (only inside math-mode) -->
 \newcommand{\norm}[1]{\left\vert\left\vert#1\right\vert\right\vert}
+\newcommand{\abs}[1]{\left\vert#1\right\vert}
 \newcommand{\mat}[1]{\boldsymbol{#1}} <!-- matrix -->
 
 <!-- Differentiation -->
@@ -53,23 +54,37 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\REAL}{\set{R}}
 
 <!-- Tensors -->
-\newcommand{\onebase}[1]{\tv{e}_#1}
-\newcommand{\twobase}[2]{\tv{e}_#1\otimes\tv{e}_{#2}}
-\newcommand{\fourbase}[4]{\tv{e}_#1\otimes\tv{e}_{#2}\otimes\tv{e}_{#3}\otimes\tv{e}_{#4}}
+\newcommand{\onebase}[1]{\tv{e}_{#1}}
+\newcommand{\twobase}[2]{\tv{e}_{#1}\otimes\tv{e}_{#2}}
+\newcommand{\fourbase}[4]{\tv{e}_{#1}\otimes\tv{e}_{#2}\otimes\tv{e}_{#3}\otimes\tv{e}_{#4}}
+\newcommand{\basei}{\onebase{i}}
+\newcommand{\baseij}{\twobase{i}{j}}
+\newcommand{\baseijkl}{\fourbase{i}{j}{k}{l}}
+
 \newcommand{\ta}[1]{\textcolor{red}{\mathrm{DEPRECIATED}}\boldsymbol{#1}}
 \newcommand{\tv}[1]{\underline{\boldsymbol{#1}}}
 \newcommand{\ts}[1]{\boldsymbol{#1}}
 \newcommand{\tf}[1]{\textbf{\textsf{#1}}}
 \newcommand{\tfind}[2]{\textsf{#1}_{#2}}
 
-\newcommand{\trans}{^{\mathrm{t}}}
+\newcommand{\tsv}[1]{\underline{#1}}
+\newcommand{\tfv}[1]{\underline{\underline{\mathsf{#1}}}}
+
+\newcommand{\trans}{^{\mathrm{T}}}
 \newcommand{\Trans}{^{\mathrm{T}}}
 \newcommand{\tst}[1]{\ts{#1}\trans}
 \newcommand{\tft}[1]{\tf{#1}\Trans}
 
+\newcommand{\tsi}[1]{\ts{#1}^{-1}}
+\newcommand{\tfi}[1]{\tf{#1}^{-1}}
+
 <!-- Special products -->
 \newcommand{\opu}{\overline{\otimes}}
 \newcommand{\opl}{\underline{\otimes}}
+
+<!-- Operations -->
+\newcommand{\tr}{\mathrm{tr}}
+\newcommand{\det}{\mathrm{det}}
 
 <!-- Colors -->
 \newcommand{\red}[1]{\textcolor{red}{#1}}

@@ -40,9 +40,9 @@ However, what if your two vectors are pointing in the same direction (but have d
 
 \todo{Add an illustration of linear dependence versus independence in 2d}
 
-\definition{With $i=1,2,\cdots,N$, the vectors $\tv{v}_i\in\set{V}$ are **linearly dependent** if there exists scalars $a_i\in\REAL$ such that $a_i \tv{v}_i = \tv{0}$. (Recall the "Einstein summation convention"). If no such scalars exists, the vectors $\tv{v}_i$ are **linearly independent**.}
+\definition{With $i=1,2,\cdots,N$, the vectors $\tv{v}_i\in\set{V}$ are **linearly dependent** if there exists scalars $a_i\in\REAL$ such that $a_i \tv{v}_i = \tv{0}$. If no such scalars exists, the vectors $\tv{v}_i$ are **linearly independent**.}
 
-$\tv{v}=a_i\tv{v}_i$, which we just used, is called a **linear combination** of the vectors $\tv{v}_i$. 
+$\tv{v}=a_i\tv{v}_i$, which we just used, is called a **linear combination** of the vectors $\tv{v}_i$. (Recall the [Einstein summation convention](/Theory/IndexNotation/#einsteins_summation_convention))
 
 ## Scalar product
 The scalar product, $\tv{u}\cdot\tv{v}$, between two vectors, $\tv{u}$ and $\tv{v}$, is defined as

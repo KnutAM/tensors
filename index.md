@@ -10,7 +10,6 @@ This page have 3 main areas, [Theory](/Theory), [Examples](/Examples) and [Refer
 * Update links to github
 * Add "discuss content" buttons and associated discussion fora on github
 * Add "report issue" buttons on each page
-* 
 
 
 ## Contributing

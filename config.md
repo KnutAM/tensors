@@ -39,6 +39,10 @@ Add here global latex commands to use throughout your pages.
     @@
 }
 
+\newcommand{\collaps}[2]{
+~~~<button type="button" class="collapsible">~~~#1~~~</button><div class="collapsiblecontent">~~~#2~~~</div>~~~
+}
+
 <!-- MATH (only inside math-mode) -->
 \newcommand{\norm}[1]{\left\vert\left\vert#1\right\vert\right\vert}
 \newcommand{\abs}[1]{\left\vert#1\right\vert}

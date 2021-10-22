@@ -515,7 +515,7 @@ td.fndef-backref {
 .franklin-content tr,
 th,
 td {
-  font-size: 14px;
+  font-size: inherit;
   padding: 10px;
   border: 1px solid black;
 }

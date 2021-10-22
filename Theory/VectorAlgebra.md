@@ -57,7 +57,7 @@ From this definition, it follows that $\norm{\tv{u}} = \sqrt{\tv{u}\cdot\tv{u}}$
 
 When working with scalar products, the following algebraic rules apply
 
-* Distributive multiplication, $\tv{u}\cdot(\tv{v}+\tv{w}) = \tv{u}\cdot\tv{v} + \tv{u}+\tv{w}$. \\*Note that this is in contrast to the associative addition*
+* Distributive multiplication, $\tv{u}\cdot(\tv{v}+\tv{w}) = \tv{u}\cdot\tv{v} + \tv{u}\cdot\tv{w}$. \\*Note that this is in contrast to the associative addition*
 * Commutative multiplication, $\tv{u}\cdot\tv{v}=\tv{v}\cdot\tv{u}$
 * Associative wrt. multiplication with scalar, $a(\tv{u}\cdot\tv{v}) = (a\tv{u})\cdot\tv{v}$
 

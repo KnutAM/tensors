@@ -40,8 +40,10 @@ Add here global latex commands to use throughout your pages.
 }
 
 \newcommand{\collaps}[2]{
-~~~<button type="button" class="collapsible">~~~#1~~~</button><div class="collapsiblecontent">~~~#2~~~</div>~~~
+~~~<button type="button" class="collapsible">~~~ #1 ~~~</button><div class="collapsiblecontent">~~~ #2 ~~~</div>~~~
 }
+
+\newcommand{\smallvspace}{~~~<p></p>~~~}
 
 <!-- MATH (only inside math-mode) -->
 \newcommand{\norm}[1]{\left\vert\left\vert#1\right\vert\right\vert}
@@ -89,6 +91,10 @@ Add here global latex commands to use throughout your pages.
 <!-- Operations -->
 \newcommand{\tr}{\mathrm{tr}}
 \newcommand{\det}{\mathrm{det}}
+
+<!-- Decorations -->
+\newcommand{\dev}{^{ \mathrm{dev} } }
+\newcommand{\sph}{^{ \mathrm{sph} } }
 
 <!-- Colors -->
 \newcommand{\red}[1]{\textcolor{red}{#1}}

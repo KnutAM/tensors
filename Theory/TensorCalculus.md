@@ -3,6 +3,7 @@ title = "Differentiating tensor expressions"
 +++
 
 # Differentiating tensor expressions
+To be completed...
 
 ## Differentiating tensor function wrt. scalar
 

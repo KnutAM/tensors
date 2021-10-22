@@ -17,6 +17,20 @@ For a zero and first order tensors, is not defined or has no effect (depending o
 \definition{The transpose, $\tst{a}$, of a 2nd order tensor, $\ts{a}=a_{ij}\baseij$, is defined as\\ $\tst{a}=a_{ij}\twobase{j}{i}=a_{ji}\baseij$}
 What is happening when we take the transpose of a 2nd order tensor is that the basis change order, but the indices remain the same. If both basis systems, $\onebase{i}$ and $\onebase{j}$ are the same, transposition is equivalent to to switching the indices on $a_{ij}$ to $a_{ji}$. When doing this in index notation, we implicitly assume that the basis vector order remains unchanged. *In this situation, the transpose of a 2nd order tensor is equivalent to the transpose of a matrix!*
 
+\collaps{Using the index notation, we can derive some important rules for transposed tensor expressions}{
+    \begin{align}
+    \left(\ts{a}+\ts{b}\right)\Trans &= \left(a_{ij}\baseij + b_{ij}\baseij\right)\Trans = \left((a_{ij}+b_{ij})\baseij\right)\Trans  \\
+    &= (a_{ij}+b_{ij}) \twobase{j}{i} = a_{ij} \twobase{j}{i} + b_{ij} \twobase{j}{i} \\
+    &= \tst{a} + \tst{b}
+    \end{align}
+    \begin{align}
+    \left(\ts{a}\ts{b}\right)\Trans &= \left(a_{ij}\baseij \cdot b_{kl}\twobase{k}{l}\right)\Trans \\
+    &= a_{ij} b_{kl} \delta_{jk} (\twobase{i}{l})\Trans \\
+    &= a_{ij} b_{kl} \delta_{jk} \twobase{l}{i} = b_{kl} \twobase{l}{k} \cdot a_{ij} \twobase{j}{i} \\
+    &= \tst{b}\tst{a}
+    \end{align}
+}
+
 ### Fourth order tensors
 \definition{The major transpose, $\tft{A}$, of a 2nd order tensor, $\tf{A}=\tfind{A}{ijkl}\baseijkl$, is defined as\\ $\tft{A}=\tfind{A}{ijkl}\fourbase{k}{l}{i}{j}=\tfind{A}{klij}\baseijkl$}
 Also when taking the *major* transpose of a 4th order tensor, the basis change order. The first two bases are exchanged for the two last, but their internal order remains. Also here, the indices remain the same. Having four equal basis systems, transposition is equivalent to switching the indices $\tfind{A}{ij\orange{kl}}$ to $\tfind{A}{\orange{kl}ij}$, implicitly assuming the same basis vector order. 
@@ -50,6 +64,16 @@ The inverse, $a^{-1}$, of a scalar, $a$, is such that $a a^{-1} = 1$. In this ca
 $\ts{a}\tsi{a}=\ts{I}=\delta_{ij}\baseij$}
 
 Here the 2nd order identity tensor, $\ts{I}$ was used, see [Special Tensors](/Theory/SpecialTensors). 
+
+\collaps{Similar to the transposition there are relations for taking the inverse of a dot product between two tensors}{
+    If we have the tensor $\ts{c}=\ts{a}\ts{b}$, then we check if $\tsi{c}=\tsi{b}\tsi{a}$ is a solution
+    \begin{align}
+    \ts{I}=\ts{c}\tsi{c}=\ts{a}\ts{b}\tsi{b}\tsi{a}=\ts{a}\ts{I}\tsi{a}=\ts{a}\tsi{a}=\ts{I}
+    \end{align}
+    So yes! We see that $\tsi{c}=\tsi{b}\tsi{a}$ is actually true. Note the similarity to the transposition. 
+    
+    However, there is no easy relation for $\tsi{c}$ if $\ts{c}=\ts{a}+\ts{b}$!
+}
 
 ### 4th order tensors
 \definition{The inverse, $\tfi{A}$, of a 4th order tensor, $\tf{A}=\tfind{A}{ijkl}\baseijkl$, is defined by\\

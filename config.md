@@ -49,6 +49,8 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\norm}[1]{\left\vert\left\vert#1\right\vert\right\vert}
 \newcommand{\abs}[1]{\left\vert#1\right\vert}
 \newcommand{\mat}[1]{\boldsymbol{#1}} <!-- matrix -->
+\newcommand{\subscr}[1]{_{ \mathrm{#1} } }  <!-- Subscript -->
+\newcommand{\supscr}[1]{^{ \mathrm{#1} } }  <!-- Superscript -->
 
 <!-- Differentiation -->
 \newcommand{\dif}{\mathrm{d}}

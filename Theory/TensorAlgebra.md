@@ -77,7 +77,7 @@ The double contraction can loosely be thought of, for 2nd and 4th order tensors,
 
 
 # Derived rules
-By using our rules for index notation, we can investigate how the above multiplication operations behave. For a full set of these rules, please see the [reference](/Reference/TensorOperations). The first example here, is the order of operations for the dot product between two vectors, that is, 
+By using our rules for index notation, we can investigate how the above multiplication operations behave. The first example here, is the order of operations for the dot product between two vectors, that is, 
 \begin{align}
 \tv{u}\cdot\tv{v} = u_i v_i = v_i u_i = \tv{v}\cdot\tv{u}
 \end{align}

@@ -36,3 +36,4 @@ title = "Index notation"
 * $\varepsilon_{ijk}\delta_{kj}$
 * $\varepsilon_{ijk}\varepsilon_{ijk}$
 * $\varepsilon_{ijk}\varepsilon_{ikl}$
+* $\varepsilon_{ijk} + \varepsilon_{ikj}$

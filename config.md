@@ -45,6 +45,8 @@ Add here global latex commands to use throughout your pages.
 
 \newcommand{\smallvspace}{~~~<p></p>~~~}
 
+\newenvironment{align*}{@@no-number \begin{align}}{\end{align} @@}
+
 <!-- MATH (only inside math-mode) -->
 \newcommand{\norm}[1]{\left\vert\left\vert#1\right\vert\right\vert}
 \newcommand{\abs}[1]{\left\vert#1\right\vert}

@@ -2,7 +2,7 @@
 title = "Tensor notation"
 +++
 
-notation
+# Tensor notation
 
 | Object                    | Computer   |   Index           | Hand-written            | Voigt notation     |
 |---------------------------|------------|-------------------|-------------------------|--------------------|

@@ -77,8 +77,11 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\tf}[1]{\textbf{\textsf{#1}}}
 \newcommand{\tfind}[2]{\textsf{#1}_{#2}}
 
+<!-- Voigt representation -->
 \newcommand{\tsv}[1]{\underline{#1}}
 \newcommand{\tfv}[1]{\underline{\underline{\mathsf{#1}}}}
+\newcommand{\tsm}[1]{\tsv{#1}}
+\newcommand{\tfm}[1]{\tfv{#1}}
 
 \newcommand{\trans}{^{\mathrm{T}}}
 \newcommand{\Trans}{^{\mathrm{T}}}

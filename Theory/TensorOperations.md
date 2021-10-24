@@ -90,7 +90,7 @@ Algorithms for determining the inverse of a 4th order tensors are virtually non-
 
 \label{determinant}
 ## Determinant, "$\det(\bullet)$"
-As for the inverse, the determinant is only defined for even order tensors. For scalars, it is trivial such that $\det(a)=a$. Similar to the inverse of 4th order tensors, it is normally not computed on a fourth order tensor but rather on the Voigt representation of this tensor. In all cases, it is calculated by using the coefficients as for a matrix, e.g. in 2d:
+As for the inverse, the determinant is only defined for even order tensors. For scalars, it is trivial such that $\det(a)=a$. Similar to the inverse of 4th order tensors, it is normally not computed on a fourth order tensor but rather on the Voigt representation of this tensor. For a 2nd order tensor, it is straight forward to calculate as the determinant of a matrix by filling the matrix by the tensor coefficients, e.g. in 2d:
 
 \begin{align}
 \ts{a}=a_{ij} \baseij, \quad \left[a_{ij}\right] = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} \\

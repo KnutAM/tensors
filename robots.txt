@@ -1,4 +1,4 @@
-Sitemap: knutam.github.io/sitemap.xml
+Sitemap: https://knutam.github.io/sitemap.xml
 
 User-agent: *
 Disallow:

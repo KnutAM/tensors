@@ -18,7 +18,7 @@ A\otimes B &= \left(A_{i_1\,i_2,\cdots,i_n} \twobase{i_1}{i_2}\cdots\onebase{i_n
 \end{align}
 Hence, this product doesn't actually "do" anything, it just represents multiple bases. 
 }{
-Another way to think is that $\baseij$ are 9 2nd order base tensors for a 2nd order tensor. I.e., $\baseij$ represents 9 orthogonal directions for a 2nd order tensor. Considering a particular base, e.g. $\twobase{1}{2}$, this can be represented in matrix form as
+Another way to think is that $\baseij$ are 9 2nd order base tensors for a 2nd order tensor. I.e., $\baseij$ represents 9 orthogonal directions for a 2nd order tensor. Considering a particular base, e.g. $\twobase{1}{2}$, it can be represented in matrix form in the $\basei$ coordinate system, as
 \begin{align}
 \left[ \twobase{1}{2} \right] = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{bmatrix}
 \end{align}
@@ -72,7 +72,7 @@ The double contraction can loosely be thought of, for 2nd and 4th order tensors,
                  &= a_{il} b_{jk} \baseijkl
 \end{align}
 }{
-  While it might seem arbitrary to introduce these special open products, they are usefull in many cases. For example, the 4th order identity tensor is $\tf{I}=\ts{I}\opu\ts{I}$. 
+  While it might seem arbitrary to introduce these special open products, they are usefull in many cases. For example, the 4th order identity tensor is $\tf{I}=\ts{I}\opu\ts{I}$ where $\ts{I}$ is the 2nd order [identity tensor](/Theory/SpecialTensors). 
 }
 
 

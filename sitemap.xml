@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+<url>
+    <loc>knutam.gitlab.io/Problems/TensorAlgebra/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/404/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Problems/VectorAlgebra/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Reference/TensorOperations/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Problems/TensorCalculus/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/IndexNotation/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/TensorOperations/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Problems/TensorOperations/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Reference/TensorIdentities/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Notation/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Reference/SpecialTensors/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/Rotation/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/TensorAlgebra/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Programming/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/search/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/Invariants/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/TensorIntro/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/VectorAlgebra/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Problems/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/SpecialTensors/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Problems/IndexNotation/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Theory/TensorCalculus/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Reference/TensorDifferentiation/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>knutam.gitlab.io/Voigt/index.html</loc>
+    <lastmod>2021-10-25</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+</urlset>

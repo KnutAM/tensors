@@ -1,0 +1,4 @@
+Sitemap: knutam.gitlab.io/sitemap.xml
+
+User-agent: *
+Disallow:

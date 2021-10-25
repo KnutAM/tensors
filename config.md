@@ -14,8 +14,8 @@ ignore = ["node_modules/"]
 # RSS (the website_{title, descr, url} must be defined to get RSS)
 website_title = "Tensors"
 website_descr = "Introduction to Tensor Analysis"
-prepath = "tensors"
-website_url   = "knutam.github.io/"
+prepath = "tensors/"
+website_url   = "https://knutam.github.io/"
 +++
 
 <!--

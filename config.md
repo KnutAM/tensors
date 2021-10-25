@@ -12,11 +12,10 @@ mintoclevel = 2
 ignore = ["node_modules/"]
 
 # RSS (the website_{title, descr, url} must be defined to get RSS)
-generate_rss = true
-website_title = "Tensor Analysis"
+website_title = "Tensors"
 website_descr = "Introduction to Tensor Analysis"
-prepath = "tensoranalysis"
-website_url   = "knutam.gitlab.io/"
+prepath = "tensors"
+website_url   = "knutam.github.io/"
 +++
 
 <!--

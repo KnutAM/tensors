@@ -89,7 +89,7 @@ we also have no difference if we flip the order. However, if we take the dot pro
 \begin{align}
 \ts{a}\cdot\tv{u} = a_{ij} u_j = u_j a_{ij} \neq \tv{u}\cdot\ts{a}\; \forall\; \ts{a}
 \end{align}
-The reason that the last relation is not equal for all $\ts{a}$, is that we contract the the last index of $\ts{a}$ with $\tv{u}$'s index. (Note that if $\ts{a}$ is symmetric, then this would be an equality.)
+The reason that the last relation is not equal for all $\ts{a}$, is that we contract the the last index of $\ts{a}$ with $\tv{u}$'s index. (Note that if $\ts{a}$ is [symmetric](/Theory/TensorOperations#transposition), then this would be an equality.)
 
 If we instead would look at a sum, we can consider $\tf{A}:\left[\ts{b} + \ts{c}\right]$,
 \begin{align}

@@ -120,8 +120,11 @@ Based on the definition of the cross product and the orthonormal coordinate syst
 \tv{e}_i\times\tv{e}_j = \left\lbrace\begin{matrix} \pm\tv{e}_k & i\neq j & k\neq i,j\\ \tv{0} & i=j & \end{matrix}\right.
 \end{align}
 
-Hence, the direction in the case that $i\neq j$ is not properly defined. This depends on the order of our basis vectors. We therefore need to introduce this order in our definition of our coordinate system and we will choose a right-handed coordinate system (see the illustration used to define the [cross product](#cross_product)). For a coordinate system, this implies that $\tv{e}_3=\tv{e}_1\times\tv{e}_2$. If we consider the different permutation, we see that our cross product considering our *right-handed* orthonormal coordinate system becomes
+Hence, the direction in the case that $i\neq j$ is not properly defined. This depends on the order of our basis vectors. We therefore need to introduce this order in our definition of our coordinate system and we will choose a right-handed coordinate system (see the illustration used to define the [cross product](#cross_product)). For a coordinate system, this implies that $\tv{e}_3=\tv{e}_1\times\tv{e}_2$. If we evaluate the cross product for two general vectors, considering our *right-handed* orthonormal coordinate system, we get
 \begin{align}
 \tv{u}\times\tv{v} = u_i v_j \varepsilon_{ijk} \tv{e}_k 
 \end{align}
-where $\varepsilon_{ijk}$ is the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol)
+where $\varepsilon_{ijk}$ is the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol). In summary, the cross product between two base vectors in a right-handed orthonormal coordinate system is
+\begin{align}
+\tv{e}_i\times\tv{e}_j = \varepsilon_{ijk} \tv{e}_{k}
+\end{align}

@@ -101,6 +101,8 @@ Add here global latex commands to use throughout your pages.
 <!-- Decorations -->
 \newcommand{\dev}{^{ \mathrm{dev} } }
 \newcommand{\sph}{^{ \mathrm{sph} } }
+\newcommand{\sym}{^{ \mathrm{sym} } }
+\newcommand{\skw}{^{ \mathrm{skw} } }
 
 <!-- Colors -->
 \newcommand{\red}[1]{\textcolor{red}{#1}}

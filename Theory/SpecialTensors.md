@@ -6,7 +6,7 @@ title = "Special tensors"
 Some tensors have special properties and occur in many applications, for example identity tensors, $1$, $\ts{I}$, and $\tf{I}$, as well as the rotation tensor $\ts{Q}$. Below, these, and additional tensors with specific properties are introduced. 
 
 ## Identity tensor
-The identity tensors, $1$, $\ts{I}$, and $\tf{I}$, have the property that when multiplied (using the appropriate contraction for that order) with another tensor, the result is that other tensor, e.g. $\ts{a}\cdot\ts{I}=\ts{a}$. The identity tensors for order 0, 2, and 4 are
+The identity tensors for order 0, 2, and 4 are
 
 | Order | Symbol   | Definition                        | Index notation           | 
 |-------|----------|-----------------------------------|--------------------------| 
@@ -14,19 +14,32 @@ The identity tensors, $1$, $\ts{I}$, and $\tf{I}$, have the property that when m
 | 2     | $\ts{I}$ | $\delta_{ij}\baseij$              | $\delta_{ij}$            | 
 | 4     | $\tf{I}$ | $\delta_{ik}\delta_{jl}\baseijkl$ | $\delta_{ik}\delta_{jl}$ |
 
-The fourth order identity tensor can actually be constructed via the special "upper" open product, $\opu$, as $\tf{I}=\ts{I}\opu\ts{I}$.
+\collaps{The identity tensors, $1$, $\ts{I}$, and $\tf{I}$, have the property that when multiplied (using the appropriate contraction for that order) with another tensor, the result is that other tensor, e.g. $\ts{a}\cdot\ts{I}=\ts{a}$.}{For these orders we have
+\begin{align*}
+1a &= a \quad \forall a \\
+\ts{I}\tv{v} &= \tv{v} \quad \forall \tv{v}  \\
+\ts{I}\ts{a} &= \ts{a} \quad \forall \ts{a} \\
+\tf{I}:\ts{a} &= \ts{a} \quad \forall \ts{a}\\
+\tf{I}:\tf{A} &= \tf{A} \quad \forall \tf{A}
+\end{align*}
+
+Hint: The fourth order identity tensor can be constructed via the [special "upper" open product](/Theory/TensorAlgebra/#specialopenproducts), $\opu$, as $\tf{I}=\ts{I}\opu\ts{I}$.
+}
+
 
 ## Symmetric tensors
+This subsection requires knowledge of [transposition](/Theory/TensorOperations/#transposition).
+
 \collaps{A 2nd order tensor $\ts{a}=a_{ij} \baseij$ is *symmetric* if $\ts{a}=\tst{a}$, or equivalently, if $a_{ij}=a_{ji}$.}{
     The most prominent examples of symmetric 2nd order tensors in continuum mechanics are the Cauchy stress $\ts{\sigma}$ and the small strain tensor $\ts{\epsilon}$. From a computational point of view, it is advantageous to use that these are symmetric, because then we only need to work with 6 instead of 9 components in 3d.}
 
-Any 2nd order tensor, $\ts{a}$, can be decomposed into its symmetric, $\ts{d}$, and skew-symmetric, $\ts{w}$ parts 
+Any 2nd order tensor, $\ts{a}$, can be decomposed into its symmetric, $\ts{a}\sym$, and skew-symmetric, $\ts{a}\skw$ parts 
 \begin{align}
-\ts{a} &= \ts{d} + \ts{w}, \quad \ts{d} = \frac{1}{2}\left( \ts{a} + \tst{a} \right) \\
-\ts{w} &= \ts{a} - \frac{1}{2}\left( \ts{a} + \tst{a} \right) = \frac{1}{2}\left( \ts{a} - \tst{a} \right)
+\ts{a} &= \ts{a}\sym + \ts{a}\skw, \quad \ts{a}\sym = \frac{1}{2}\left[ \ts{a} + \tst{a} \right]  \\
+\ts{a}\skw &= \ts{a} - \ts{a}\sym = \frac{1}{2}\left[ \ts{a} - \tst{a} \right]
 \end{align}
 
-Any skew-symmetric tensor, such as $\ts{w}$, then has the property that $\ts{w}=-\tst{w}$
+Any skew-symmetric tensor, such as $\ts{w}=\ts{a}\skw$, then has the property that $\ts{w}=-\tst{w}$
 
 
 \collaps{A 4th order tensor $\tf{A}=\tfind{A}{ijkl}\baseijkl$ is \\

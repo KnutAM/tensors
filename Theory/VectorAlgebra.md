@@ -100,7 +100,7 @@ resulting in the metric coefficients $e_{ij}=\tv{e}_i \cdot \tv{e}_j$ for the co
 
 The solution is an **orthonormal coordinate system** (Cartesian coordinate system). The *ortho* comes from *orthogonal*, implying perpendicularity between the base vectors. If we consider the scalar product, this implies that $\tv{e}_i\cdot\tv{e}_j=0$ if $i\neq j$. The *normal* comes from that the base vectors are normalized, i.e. have unit length ($\norm{\tv{e}_i}=1$). This implies that $\tv{e}_i\cdot\tv{e}_j=1$ if $i=j$. So with these two choices, we have exactly the definition of $\delta_{ij}$, for our **orthonormal coordinate system** with basis vectors $\tv{e}_i$:
 \begin{align}
-\tv{e}_i\cdot\tv{e}_j = \left\lbrace\begin{matrix} 1 & i=j \\ 0 & i\neq j\end{matrix}\right.
+\tv{e}_i\cdot\tv{e}_j = \delta_{ij} = \left\lbrace\begin{matrix} 1 & i=j \\ 0 & i\neq j\end{matrix}\right.
 \end{align}
 
 ### Scalar product in orthonormal basis system
@@ -120,11 +120,13 @@ Based on the definition of the cross product and the orthonormal coordinate syst
 \tv{e}_i\times\tv{e}_j = \left\lbrace\begin{matrix} \pm\tv{e}_k & i\neq j & k\neq i,j\\ \tv{0} & i=j & \end{matrix}\right.
 \end{align}
 
-Hence, the direction in the case that $i\neq j$ is not properly defined. This depends on the order of our basis vectors. We therefore need to introduce this order in our definition of our coordinate system and we will choose a right-handed coordinate system (see the illustration used to define the [cross product](#cross_product)). For a coordinate system, this implies that $\tv{e}_3=\tv{e}_1\times\tv{e}_2$. If we evaluate the cross product for two general vectors, considering our *right-handed* orthonormal coordinate system, we get
-\begin{align}
-\tv{u}\times\tv{v} = u_i v_j \varepsilon_{ijk} \tv{e}_k 
-\end{align}
-where $\varepsilon_{ijk}$ is the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol). In summary, the cross product between two base vectors in a right-handed orthonormal coordinate system is
+Hence, the direction in the case that $i\neq j$ is not properly defined. This depends on the order of our basis vectors. We therefore need to introduce this order in our definition of our coordinate system and we will choose a right-handed coordinate system (see the illustration used to define the [cross product](#cross_product)). For a coordinate system, this implies that $\tv{e}_3=\tv{e}_1\times\tv{e}_2$. Using the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol), $\varepsilon_{ijk}$, we then have 
 \begin{align}
 \tv{e}_i\times\tv{e}_j = \varepsilon_{ijk} \tv{e}_{k}
 \end{align}
+in a *right-handed* orthonormal coordinate system. The cross product for two general vectors is then
+\begin{align}
+\tv{u}\times\tv{v} = u_i v_j \varepsilon_{ijk} \tv{e}_k 
+\end{align}
+
+Unless otherwise specified, coordinate systems discussed on this webpage are right-handed and orthonormal. 

@@ -20,14 +20,14 @@ When we take the transpose of a 2nd order tensor, the basis change order, but th
 
 \collaps{Using the index notation, we can derive some important rules for transposed tensor expressions}{
     \begin{align}
-    \left(\ts{a}+\ts{b}\right)\trans &= \left(a_{ij}\baseij + b_{ij}\baseij\right)\trans = \left((a_{ij}+b_{ij})\baseij\right)\trans  \\
+    \left[\ts{a}+\ts{b}\right]\trans &= \left[a_{ij}\baseij + b_{ij}\baseij\right]\trans = \left[[a_{ij}+b_{ij}]\baseij\right]\trans  \\
     &= (a_{ij}+b_{ij}) \twobase{j}{i} = a_{ij} \twobase{j}{i} + b_{ij} \twobase{j}{i} \\
     &= \tst{a} + \tst{b}
     \end{align}
     \begin{align}
-    \left(\ts{a}\ts{b}\right)\trans &= \left(a_{ij}\baseij \cdot b_{kl}\twobase{k}{l}\right)\trans \\
-    &= a_{ij} b_{kl} \delta_{jk} (\twobase{i}{l})\trans \\
-    &= a_{ij} b_{kl} \delta_{jk} \twobase{l}{i} = b_{kl} \twobase{l}{k} \cdot a_{ij} \twobase{j}{i} \\
+    \left[\ts{a}\ts{b}\right]\trans &= \left[a_{ij}\baseij \cdot b_{kl}\twobase{k}{l}\right]\trans \\
+    &= a_{ij} b_{kl} \left[\tv{e}_j\cdot\tv{e}_k\right] [\twobase{i}{l}]\trans, \quad \tv{e}_j\cdot\tv{e}_k=\delta_{jk}=\tv{e}_k\cdot\tv{e}_j \\
+    &= a_{ij} b_{kl} \left[\tv{e}_j\cdot\tv{e}_k\right] \twobase{l}{i} = b_{kl} \twobase{l}{k} \cdot a_{ij} \twobase{j}{i} \\
     &= \tst{b}\tst{a}
     \end{align}
 }

@@ -12,11 +12,11 @@ The previous [section](/Theory/TensorAlgebra) introduced operations between tens
 
 \label{transposition}
 ## Transposition, "$\bullet\Trans$"
-For a zero and first order tensors, is not defined or has no effect (depending on your point of view). I.e. $a\trans=a$ and $\tv{u}\trans=\tv{u}$.
+For zero and first order tensors, is not defined or has no effect (depending on your point of view). I.e. $a\trans=a$ and $\tv{u}\trans=\tv{u}$.
 
-### Second order tensors
+### Second-order tensors
 \definition{The transpose, $\tst{a}$, of a 2nd order tensor, $\ts{a}=a_{ij}\baseij$, is defined as\\ $\tst{a}=a_{ij}\twobase{j}{i}=a_{ji}\baseij$}
-What is happening when we take the transpose of a 2nd order tensor is that the basis change order, but the indices remain the same. If both basis systems, $\onebase{i}$ and $\onebase{j}$ are the same, transposition is equivalent to to switching the indices on $a_{ij}$ to $a_{ji}$. When doing this in index notation, we implicitly assume that the basis vector order remains unchanged. 
+When we take the transpose of a 2nd order tensor, the basis change order, but the indices remain the same. If both basis systems, $\onebase{i}$ and $\onebase{j}$ are the same, transposition is equivalent to to switching the indices on $a_{ij}$ to $a_{ji}$. When doing this in index notation, we implicitly assume that the basis vector order remains unchanged. 
 
 \collaps{Using the index notation, we can derive some important rules for transposed tensor expressions}{
     \begin{align}

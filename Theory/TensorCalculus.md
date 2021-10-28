@@ -3,13 +3,51 @@ title = "Differentiating tensor expressions"
 +++
 
 # Differentiating tensor expressions
-To be completed...
+On this page, we will work with expressions of the form
+\begin{align}
+\diff{\tv{u}}{\tv{v}} = \diff{u_i}{v_j} \baseij
+\end{align}
+which is true for *constant* orthonormal coordinate systems. With constant, we mean that the base vectors are constant in space. Hence, we can always differentiate the coefficients. And since we can consider each free coefficient, e.g. $u_1$, as a scalar value, we can apply basic calculus rules, for example the chain and product rules. 
 
 ## Differentiating tensor function wrt. scalar
-
-## Differentiating scalar function wrt. tensor
+If we consider $\ts{a} = f(x) = x\ts{b}$, then 
+\begin{align}
+\diff{\ts{a}}{x} = \diff{x b_{ij}}{x} \baseij = b_{ij} \baseij = \ts{b}
+\end{align}
+because $b_{ij}$ doesn't depend on $x$.
 
 ## Differentiating tensor function wrt. tensor
+Let's first consider the differentiating a tensor wrt. itself. For a first-order tensor, we have
+\begin{align}
+\diff{\tv{u}}{\tv{u}} &= \diff{u_i}{u_j} \baseij\\
+\diff{u_i}{u_j} &= \delta_{ij} \\
+\diff{\tv{u}}{\tv{u}} &= \ts{I}
+\end{align}
+We see that if $i=j$ then $\dif u_i/\dif u_j = 1$. If $i\neq j$, then $\dif u_i/\dif u_j = 0$
+
+If we now consider a 2nd order tensor, we have
+\begin{align}
+\diff{\ts{a}}{\ts{a}} &= \diff{a_{ij}}{a_{kl}} \baseijkl \\
+\diff{a_{ij}}{a_{kl}} &= \delta_{ik}\delta_{jl}\\
+\diff{\ts{a}}{\ts{a}} &= \tf{I}
+\end{align}
+We can see that if $i=k$ and $j=l$, then $\diffil{a_{ij}}{a_{kl}} = 1$. Otherwise, it is zero. In other words: $\delta_{ik}\delta_{jl}$. 
+
+To consider a more complicated example, we look at
+\begin{align}
+\diff{\left[\tv{v}\ts{a}\right]}{\tv{v}} &= \diff{v_k a_{ki}}{v_j} \baseij \\
+\diff{v_k a_{ki}}{v_j} &= \diff{v_k}{v_j} a_{ki} = \delta_{kj} a_{ki} = a_{ji} \\
+\diff{\left[\tv{v}\ts{a}\right]}{\tv{v}} &= \tst{a}
+\end{align}
+
+## Differentiating scalar function wrt. tensor
+If we consider $y = f(\ts{a}) = \ts{a}:\ts{a}$, then
+\begin{align}
+\diff{y}{\ts{a}} &= \diff{a_{kl}a_{kl}}{a_{ij}} \baseij\\
+&= \left[\diff{a_{kl}}{a_{ij}} a_{kl} + a_{kl} \diff{a_{kl}}{a_{ij}}\right]\baseij \\
+&= \left[\delta_{ki}\delta_{lj} a_{kl} + a_{kl} \delta_{ki}\delta_{lj}\right]\baseij \\
+&= \left[a_{ij} + a_{ij}\right]\baseij = 2a_{ij}\baseij = 2\ts{a}
+\end{align}
 
 ## Gradient, divergence
 

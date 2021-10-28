@@ -56,7 +56,9 @@ Add here global latex commands to use throughout your pages.
 <!-- Differentiation -->
 \newcommand{\dif}{\mathrm{d}}
 \newcommand{\diff}[2]{\frac{\dif #1}{\dif #2}}
+\newcommand{\diffil}[2]{\dif #1/\dif #2}
 \newcommand{\pdiff}[2]{\frac{\partial #1}{\partial #2}}
+\newcommand{\pdiffil}[2]{\partial #1/\partial #2}
 
 <!-- Set -->
 \newcommand{\set}[1]{\mathbb{#1}}

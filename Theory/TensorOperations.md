@@ -12,10 +12,10 @@ The previous [section](/Theory/TensorAlgebra) introduced operations between tens
 
 \label{transposition}
 ## Transposition, "$\bullet\Trans$"
-For zero and first order tensors, is not defined or has no effect (depending on your point of view). I.e. $a\trans=a$ and $\tv{u}\trans=\tv{u}$.
+For zero and first order tensors, transposition is not defined or has no effect (depending on your point of view). I.e. $a\trans=a$ and $\tv{u}\trans=\tv{u}$. Note that, in contrary to linear algebra, we do not distinguish between *row* and *column* vectors. A vector is just a 1st order tensor. 
 
 ### Second-order tensors
-\definition{The transpose, $\tst{a}$, of a 2nd order tensor, $\ts{a}=a_{ij}\baseij$, is defined as\\ $\tst{a}=a_{ij}\twobase{j}{i}=a_{ji}\baseij$}
+\definition{The transpose, $\tst{a}$, of a 2nd order tensor, $\ts{a}=a_{\blue{i}\red{j}}\blue{\tv{e}_i}\otimes\red{\tv{e}_j}$, is defined as\\ $\tst{a}=a_{\blue{i}\red{j}}\red{\tv{e}_j}\otimes\blue{\tv{e}_i}=a_{\red{j}\blue{i}}\blue{\tv{e}_i}\otimes\red{\tv{e}_j}$}
 When we take the transpose of a 2nd order tensor, the basis change order, but the indices remain the same. If both basis systems, $\onebase{i}$ and $\onebase{j}$ are the same, transposition is equivalent to to switching the indices on $a_{ij}$ to $a_{ji}$. When doing this in index notation, we implicitly assume that the basis vector order remains unchanged. 
 
 \collaps{Using the index notation, we can derive some important rules for transposed tensor expressions}{
@@ -35,17 +35,17 @@ When we take the transpose of a 2nd order tensor, the basis change order, but th
 We can also write the transposition directly on the index symbol, $a\trans_{ij}$. For a tensor with equal basis this is the same as transposition of the tensor. However, it might also be used in expressions when the indices are not contracted with basis vectors. Consider the expression $a_{ij} b_i = a\trans_{ji} b_i$, where in the first we contract $b$ with $a$'s first index, and in the second we contract with $a\trans$'s second index (the same as $a$'s first index). Hence, we have that $a_{ij} = a\trans_{ji}$
 
 ### Fourth order tensors
-\definition{The major transpose, $\tft{A}$, of a 2nd order tensor, $\tf{A}=\tfind{A}{ijkl}\baseijkl$, is defined as\\ $\tft{A}=\tfind{A}{ijkl}\fourbase{k}{l}{i}{j}=\tfind{A}{klij}\baseijkl$}
-Also when taking the *major* transpose of a 4th order tensor, the basis change order. The first two bases are exchanged for the two last, but their internal order remains. Also here, the indices remain the same. Having four equal basis systems, transposition is equivalent to switching the indices $\tfind{A}{ij\orange{kl}}$ to $\tfind{A}{\orange{kl}ij}$, implicitly assuming the same basis vector order. 
+\definition{The major transpose, $\tft{A}$, of a 2nd order tensor, $\tf{A}=\tfind{A}{\blue{ij}\red{kl}}\blue{\baseij}\otimes\red{\twobase{k}{l}}$, is defined as\\ $\tft{A}=\tfind{A}{\blue{ij}\red{kl}}\red{\twobase{k}{l}}\otimes\blue{\baseij}=\tfind{A}{\red{kl}\blue{ij}}\blue{\baseij}\otimes\red{\twobase{k}{l}}$}
+When taking the *major* transpose of a 4th order tensor, the basis change order. The first two bases exchange places with the two last while maintaining their internal order. For equal base vectors, transposition is equivalent to switching the indices $\tfind{A}{\blue{ij}\red{kl}}$ to $\tfind{A}{\red{kl}\blue{ij}}$. In this case, we implicitly assume the same basis vector order. 
 
-Usually, the tranpose of a 4th order tensor implies the major transpose. However, we could also consider minor transposition, i.e. going from $\tfind{A}{ijkl}$ to $\tfind{A}{jikl}$, $\tfind{A}{ijlk}$, or $\tfind{A}{jilk}$. These would all be *minor* transpositions, but have no clear symbol such as $\bullet\Trans$. 
+Usually, the transpose of a 4th order tensor implies the major transpose. However, we could also consider minor transposition, i.e. going from $\tfind{A}{ijkl}$ to $\tfind{A}{jikl}$, $\tfind{A}{ijlk}$, or $\tfind{A}{jilk}$. These would all be *minor* transpositions but have no clear symbol such as $\bullet\Trans$. 
 
 \label{trace}
 ## Trace, $\tr(\bullet)$
 The trace is an operation normally associated with second order tensors, and is the sum of the diagonal entries
-\definition{The trace of a second order tensor, $\ts{a}=a_{ij}\baseij$, is defined as $\tr(\ts{a})=a_{ii}$}
+\definition{The trace of a second order tensor, $\ts{a}=a_{ij}\baseij$, is defined as $\tr(\ts{a})=\ts{a}:\ts{I}=a_{ii}$}
 
-The trace measures the volumetric part of a tensor. For example, the pressure, $p$, is defined as $p=-\tr(\ts{\sigma})/3$ where $\ts{\sigma}$ is the stress tensor. 
+The trace measures the spherical (volumetric) part of a tensor. For example, the pressure, $p$, is defined as $p=-\tr(\ts{\sigma})/3$ where $\ts{\sigma}$ is the stress tensor. 
 
 \label{norm}
 ## Norm, "$\norm{\bullet}$"
@@ -83,19 +83,21 @@ Here the 2nd order identity tensor, $\ts{I}$ was used, see [Special Tensors](/Th
 
 ### 4th order tensors
 \definition{The inverse, $\tfi{A}$, of a 4th order tensor, $\tf{A}=\tfind{A}{ijkl}\baseijkl$, is defined by\\
-$\tf{A}:\tfi{A}=\ts{I}\opu\ts{I}=\delta_{ik}\delta_{jl}\baseijkl$}
+$\tf{A}:\tfi{A}=\tf{I}=\delta_{ik}\delta_{jl}\baseijkl$}
 
 \todo{Should this be moved to computations?}
-Algorithms for determining the inverse of a 4th order tensors are virtually non-existent. However, we may represent the entities in a 4th order tensor as a matrix using the [Voigt notation](/Theory/TensorComputation#voigt_notation), $\tfv{A}$. In this notation, the double contraction reduces to a regular matrix-matrix product: $\tf{A}:\tf{A}=\tfv{A}\cdot\tfv{A}$. Hence, to calculate the inverse of a 4th order tensor, it is usually necessary to convert to the Voigt format, calculate the inverse, and then convert back. 
+Algorithms for determining the inverse of 4th order tensors are virtually non-existent. However, we may represent the entities in a 4th order tensor as a matrix using the [Voigt notation](), $\tfv{A}$. In this notation, the double contraction reduces to a regular matrix-matrix product: $\tf{A}:\tf{A}=\tfv{A}\cdot\tfv{A}$. Hence, to calculate the inverse of a 4th order tensor, it is usually necessary to convert to the Voigt format, calculate the inverse, and then convert back. 
 
 \label{determinant}
 ## Determinant, "$\det(\bullet)$"
-As for the inverse, the determinant is only defined for even order tensors. For scalars, it is trivial such that $\det(a)=a$. Similar to the inverse of 4th order tensors, it is normally not computed on a fourth order tensor but rather on the Voigt representation of this tensor. For a 2nd order tensor, it is straight forward to calculate as the determinant of a matrix by filling the matrix by the tensor coefficients, e.g. in 2d:
+As for the inverse, the determinant is only defined for even order tensors. For scalars, it is trivial such that $\det(a)=a$. For a 2nd order tensor, it is straight-forward to calculate as the determinant of a matrix by filling the matrix by the tensor coefficients, e.g. in 2d:
 
 \begin{align}
 \ts{a}=a_{ij} \baseij, \quad \left[a_{ij}\right] = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} \\
 \det(\ts{a}) = a_{11} a_{22} - a_{21} a_{12}
 \end{align}
+
+Similar to the inverse of 4th order tensors, the determinant is normally not computed on a fourth-order tensor directly but on its Voigt representation.
 
 \label{exponentiation}
 ## Exponentiation, "$\bullet^n$"

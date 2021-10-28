@@ -17,10 +17,11 @@ to rotate a vector around the $z$-axis. Similarly, we can introduce the [rotatio
 \end{align}
 }
 
-The rotation tensor rotates a vector, but will not change its length. To rotate a vector $\tv{v}$, we can either do $\ts{R}\tv{v}$ or $\tv{v}\ts{R}$. Both will rotate the vector, but in opposite directions, which we can see when we consider the index notation for these expressions: $R_{ij} v_j$ and $v_j R_{ji} = R^{-1}_{ij} v_j$. If we take resulting vector in the last expression and left multiply with $\ts{R}$ as in the first expression, we get $R_{ki}R^{-1}_{ij} v_j = \delta_{kj} v_j = v_k$. Hence, we rotated back to the original vector, showing that the first rotation was in the opposite direction. By convention, we define the rotation tensor such that we should right-multiply to get the desired rotation, i.e. $\ts{R}\tv{v}$. 
+The rotation tensor rotates a vector, but will not change its length. To rotate a vector $\tv{v}$, we can either do $\ts{R}\tv{v}$ or $\tv{v}\ts{R}$. Both will rotate the vector, but in opposite directions, which we can see when we consider the index notation for these expressions: $R_{ij} v_j$ and $v_j R_{ji} = R^{-1}_{ij} v_j$. If we take resulting vector in the last expression and left multiply with $\ts{R}$ as in the first expression, we get $R_{ki}R^{-1}_{ij} v_j = \delta_{kj} v_j = v_k$. Hence, we rotated back to the original vector, showing that the first rotation was in the opposite direction. By convention, we define the rotation tensor such that we should left-multiply the vector by $\ts{R}$ to get the desired rotation, i.e. $\ts{R}\tv{v}$. 
 
 ## Change of coordinates
 ![alt](/assets/Rotation.svg)
+
 The left illustration has two coordinate systems, $\tv{e}_i$ and $\tv{g}_i$. The vector $\tv{v}$ is then 
 \begin{align}
 \tv{v}=v_i\supscr{e} \basei = v_i\supscr{g} \tv{g}_i
@@ -68,17 +69,17 @@ Since $Q\supscr{eg}_{ij}=\tv{g}_i \cdot \tv{e}_j$ and $Q\supscr{ge}_{jk}=(Q\sups
 where in the first equality we used that $\tv{e}_j = \ts{Q}\tv{e}_j$. }
 
 ### Higher order tensors
-\collaps{If we would like to change to coordinates for higher order tensor, we simply transform each base vector by right multiplying by $\ts{Q}$. }{Transforming the bases of the 2nd and 4th order tensors $\ts{a}$ and $\tf{A}$, becomes
+\collaps{If we would like to change to coordinates for higher order tensor, we simply transform each base vector by left-multiplying by $\ts{Q}$. }{Transforming the bases of the 2nd and 4th order tensors $\ts{a}$ and $\tf{A}$, becomes
 \begin{align}
 a_{ij} (\ts{Q}\tv{e}_i)\otimes(\ts{Q}\tv{e}_j) = \ts{Q}\ts{a}\tst{Q} = (\ts{Q}\opu\ts{Q}):\ts{a} \\
 \tfind{A}{ijkl} (\ts{Q}\tv{e}_i)\otimes(\ts{Q}\tv{e}_j)\otimes(\ts{Q}\tv{e}_k)\otimes(\ts{Q}\tv{e}_l) = (\ts{Q}\opu\ts{Q}):\tf{A}:(\tst{Q}\opu\tst{Q})
 \end{align}
 When actually doing the calculations however, we work in index notation. So to transform from $a_{ij}\supscr{e}$ and $\tfind{A}{ijkl}\supscr{e}$ to $a_{ij}\supscr{g}$ and $\tfind{A}{ijkl}\supscr{g}$, we have
 \begin{align}
-a_{ij}\supscr{g} &= Q_{ik} Q_{jl} a_{ij}\supscr{e} \\
-\tfind{A}{ijkl}\supscr{g} &= Q_{im} Q_{jn}\tfind{A}{mnop}\supscr{e} Q_{ko} Q_{lp} = Q_{im} Q_{jn}\tfind{A}{mnop}\supscr{e} Q\trans_{ok} Q\trans_{pl} 
+a_{ij}\supscr{g} &= Q_{ik}\supscr{eg} Q_{jl}\supscr{eg} a_{ij}\supscr{e} \\
+\tfind{A}{ijkl}\supscr{g} &= Q_{im}\supscr{eg} Q_{jn}\supscr{eg} Q_{ko}\supscr{eg} Q_{lp}\supscr{eg} \tfind{A}{mnop}\supscr{e} 
 \end{align}
-I.e. we "right multiply" each index by the transformation coefficients $Q_{ij}=\tv{g}_i \cdot \tv{e}_j$
+I.e. we left-multiply each index by the transformation coefficients $Q_{ij}\supscr{eg}=\tv{g}_i \cdot \tv{e}_j$
 }
 
 ## Tensor rotation
@@ -91,13 +92,15 @@ Above, we have found the following interesting facts about coordinate transforma
 \begin{align}
 a_{ij} (\ts{R}\tv{e}_i)\otimes(\ts{R}\tv{e}_j) &= a_{ij} (R_{kl}\twobase{k}{l}\cdot\basei) \otimes (R_{mn}\twobase{m}{n}\cdot\onebase{j}) \\
 &= a_{ij} R_{kl} R_{mn} (\onebase{k} \delta_{li}) \otimes (\delta_{nj} \onebase{m})\\
-&= R_{ki} a_{ij} R_{mj} \twobase{k}{m} = R_{ki} a_{ij} R\trans_{jm} \twobase{k}{m}
+&= R_{ki} a_{ij} R_{mj} \twobase{k}{m} = R_{ki} a_{ij} R\trans_{jm} \twobase{k}{m} \\
+&= \ts{R} \ts{a} \tst{R}
 \end{align}
 Hence, if we just consider coefficients via index expressions, we have the rotated coefficients $a'_{km}$ as $a'_{km} = R_{ki} a_{ij} R\trans_{jm}$.
 
 Similarly, rotating a 4th order tensor, $\tf{A}$, becomes
 \begin{align}
-\tfind{A}{ijkl} (\ts{R}\tv{e}_i)\otimes(\ts{R}\tv{e}_j)\otimes(\ts{R}\tv{e}_k)\otimes(\ts{R}\tv{e}_l) = R_{mi} R_{nj} \tfind{A}{ijkl} R\trans_{ko} R\trans_{lp} \fourbase{m}{n}{o}{p}
+\tfind{A}{ijkl} (\ts{R}\tv{e}_i)\otimes(\ts{R}\tv{e}_j)\otimes(\ts{R}\tv{e}_k)\otimes(\ts{R}\tv{e}_l) &= R_{mi} R_{nj} \tfind{A}{ijkl} R\trans_{ko} R\trans_{lp} \fourbase{m}{n}{o}{p} \\
+&= \left[ \ts{R}\opu \ts{R}\right] : \tf{A} : \left[\tst{R} \opu \tst{R}\right]
 \end{align}
 and if we just consider coefficients via index expressions, we have the rotated coefficients $\tfind{A}{mnop}'$ as $\tfind{A}{mnop}' = R_{mi} R_{nj} \tfind{A}{ijkl} R\trans_{ko} R\trans_{lp}$. 
 }

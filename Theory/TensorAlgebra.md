@@ -88,7 +88,7 @@ The double contraction can loosely be thought of, for 2nd and 4th order tensors,
                  &= a_{il} b_{jk} \baseijkl
 \end{align}
 }{
-  While it might seem arbitrary to introduce these special open products, they are usefull in many cases. For example, the 4th order identity tensor is $\tf{I}=\ts{I}\opu\ts{I}$ where $\ts{I}$ is the 2nd order [identity tensor](/Theory/SpecialTensors). 
+  While it might seem arbitrary to introduce these special open products, they are useful in many cases. For example, the 4th order identity tensor is $\tf{I}=\ts{I}\opu\ts{I}$ where $\ts{I}$ is the 2nd order [identity tensor](/Theory/SpecialTensors). 
 }
 
 

@@ -70,7 +70,7 @@ One common special symbol for index notation is the "Kronecker delta", $\delta_{
 \begin{align}
 \delta_{ij} = \left\lbrace \begin{matrix} 1 & i=j \\ 0 & i\neq j \end{matrix} \right.
 \end{align}
-This can be though of as an identity operator, because $A_{ij} \delta_{jk} = A_{jk}$, as can be seen if we expand the expression (assume dimension 2 for brevity)
+This can be though of as an identity operator, because $A_{ij} \delta_{jk} = A_{ik}$, as can be seen if we expand the expression (assume dimension 2 for brevity)
 \begin{align}
 k=1: \quad A_{ij} \delta_{j1} &= A_{i1}\delta_{11} + A_{i2}\delta_{21} =  A_{i1}, \quad \delta_{11}=1, \delta_{12}=0\\
 k=2: \quad A_{ij} \delta_{j2} &= A_{i1}\delta_{12} + A_{i2}\delta_{22} = A_{i2}, \quad \delta_{21}=0, \delta_{22}=1

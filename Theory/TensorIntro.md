@@ -8,7 +8,7 @@ In the previous [chapter](/Theory/VectorAlgebra), we wrote that vectors are basi
 \begin{align}
 \tv{v}\Trans \tv{A} \tv{v}
 \end{align}
-where $\tv{v}$ is a vector and  $\tv{A}$ is a matrix. But why do we need to transpose the first $\tv{v}$? *To make the dimensions match*. But $\tv{v}$ only have one dimension, so why is this required?
+where $\tv{v}$ is a (column) vector and  $\tv{A}$ is a matrix. But why do we need to transpose the first $\tv{v}$? *To make the dimensions match*. But $\tv{v}$ only have one dimension, so why is this required?
 
 Let's look at another example involving differentiation: How to evaluate the following
 \begin{align}

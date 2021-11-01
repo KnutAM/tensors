@@ -3,9 +3,9 @@ title = "Index notation"
 +++
 
 # Index notation
-Using the so-called index notation allows us to express complicated sums and products in a compact form. This is very useful for performing derivations involving tensor expressions, but can also be used in other situations. However, it can take a bit of practice to become comfortable with the notation before using it efficiently. Still, you probably have already used index notation without thinking about it: Consider the vector $\tv{v}$, if you want to write out its components, you might write
+Using the so-called index notation allows us to express complicated sums and products in a compact form. This compact form is useful for performing derivations involving tensor expressions and can also be used in other situations. However, it can take a bit of practice to become comfortable with the notation before using it efficiently. Still, you probably have already used index notation without thinking about it: Consider the vector $\tv{v}$, if you want to write out its components, you might write
 \begin{align}
-\tv{v} = \left[v_1, v_2, v_3\right] \label{eq:symbol1}
+\tv{v} = \left[v_1, v_2, v_3\right]\Trans
 \end{align}
 Each component is then $v_j$, where $j$ can be 1, 2, or 3. Normally when working with tensors, we will only consider up to the 3 spatial dimensions. For index notation in general we can consider an aribtrary number of **dimensions**, e.g. $j\in\lbrace 1, 2, \cdots, N\rbrace$. In addition to increasing the number of dimensions, $N$, we can also consider objects of higher **order**. For example, if we have a matrix $\mat{M}$ with dimension 3, we can write this
 \begin{align}
@@ -27,7 +27,7 @@ If we would like to represent the matrix-vector multiplication $\tv{u}=\tv{M}\tv
 \begin{align}
 u_i = \sum_{j=1}^3 M_{ij} v_j = M_{i1} v_1 + M_{i2} v_2 + M_{i3} v_3
 \end{align}
-With the Einstein summation convention, we do not have to write the summation symbol, and can simply write
+With the Einstein summation convention, we do not have to write the summation symbol and can write
 \begin{align}
 u_i = M_{ij}v_j
 \end{align}

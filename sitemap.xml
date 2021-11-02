@@ -8,12 +8,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://knutam.github.io/Reference/TensorOperations/index.html</loc>
-    <lastmod>2021-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://knutam.github.io/Theory/TensorOperations/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
@@ -21,12 +15,6 @@
 </url>
 <url>
     <loc>https://knutam.github.io/Theory/IndexNotation/index.html</loc>
-    <lastmod>2021-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://knutam.github.io/Reference/TensorIdentities/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -44,13 +32,19 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://knutam.github.io/Reference/SpecialTensors/index.html</loc>
+    <loc>https://knutam.github.io/Theory/TensorAlgebra/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
     <loc>https://knutam.github.io/Programming/index.html</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://knutam.github.io/Formulas/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -80,13 +74,37 @@
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://knutam.github.io/Formulas/Transposition/index.html</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://knutam.github.io/page_license/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
 </url>
 <url>
+    <loc>https://knutam.github.io/Formulas/Rotation/index.html</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://knutam.github.io/Formulas/Inverse/index.html</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
     <loc>https://knutam.github.io/Theory/VectorAlgebra/index.html</loc>
+    <lastmod>2021-11-02</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.5</priority>
+</url>
+<url>
+    <loc>https://knutam.github.io/Formulas/Determinant/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
@@ -99,12 +117,6 @@
 </url>
 <url>
     <loc>https://knutam.github.io/Theory/TensorCalculus/index.html</loc>
-    <lastmod>2021-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
-    <loc>https://knutam.github.io/Reference/TensorDifferentiation/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>

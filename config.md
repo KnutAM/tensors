@@ -92,6 +92,9 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\tsi}[1]{\ts{#1}^{-1}}
 \newcommand{\tfi}[1]{\tf{#1}^{-1}}
 
+\newcommand{\tsti}[1]{\ts{#1}^{-\mathrm{T}}}
+\newcommand{\tfti}[1]{\tf{#1}^{-\mathrm{T}}}
+
 <!-- Special products -->
 \newcommand{\opu}{\overline{\otimes}}
 \newcommand{\opl}{\underline{\otimes}}

@@ -17,7 +17,7 @@ A\otimes B &= \left(A_{i_1\,i_2,\cdots,i_n} \twobase{i_1}{i_2}\cdots\onebase{i_n
 &= A_{i_1\,i_2,\cdots,i_n} B_{j_1\,j_2,\cdots,j_m} \twobase{i_1}{i_2}\cdots\onebase{i_n} \otimes \twobase{j_1}{j_2}\cdots\onebase{j_m}
 \end{align}
 Hence, this product doesn't actually "do" anything. It just represents multiple bases.
-In pure index notation, if we have e.g. $\tf{C}=\ts{a}\otimes\ts{b}$, then $\tfind{C}_{ijkl}=a_{ij} b_{kl}$.
+In pure index notation, if we have e.g. $\tf{C}=\ts{a}\otimes\ts{b}$, then $\tfind{C}{ijkl}=a_{ij} b_{kl}$.
 }{
 Another way to think is that $\baseij$ are 9 2nd order base tensors for a 2nd order tensor. I.e., $\baseij$ represents 9 orthogonal directions for a 2nd order tensor. Considering a particular base, e.g. $\twobase{1}{2}$, it can be represented in matrix form in the $\basei$ coordinate system, as
 \begin{align}

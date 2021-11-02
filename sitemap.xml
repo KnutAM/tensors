@@ -50,12 +50,6 @@
     <priority>0.5</priority>
 </url>
 <url>
-    <loc>https://knutam.github.io/Theory/TensorAlgebra/index.html</loc>
-    <lastmod>2021-11-02</lastmod>
-    <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
-</url>
-<url>
     <loc>https://knutam.github.io/Programming/index.html</loc>
     <lastmod>2021-11-02</lastmod>
     <changefreq>monthly</changefreq>

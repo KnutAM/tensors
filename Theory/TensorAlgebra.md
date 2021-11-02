@@ -83,11 +83,13 @@ The double contraction can loosely be thought of, for 2nd and 4th order tensors,
                  &= a_{ik} b_{jl} \twobase{i}{k} \opu \twobase{j}{l} \\
                  &= a_{ik} b_{jl} \baseijkl
 \end{align}
+If $\tf{C}=\ts{a}\opu\ts{b}$, then in pure index notation we have $\tfind{C}{ijkl}=a_{ik} b_{jl}$
 \begin{align}
 \ts{a}\opl\ts{b} &= \left(a_{il}\twobase{i}{l} \right) \opl \left(b_{jk} \twobase{j}{k}\right) \\
                  &= a_{ik} b_{jl} \twobase{i}{l} \opu \twobase{j}{k} \\
                  &= a_{il} b_{jk} \baseijkl
 \end{align}
+If $\tf{C}=\ts{a}\opl\ts{b}$, then in pure index notation we have $\tfind{C}{ijkl}=a_{il} b_{jk}$
 }{
   While it might seem arbitrary to introduce these special open products, they are useful in many cases. For example, the 4th order identity tensor is $\tf{I}=\ts{I}\opu\ts{I}$ where $\ts{I}$ is the 2nd order [identity tensor](/Theory/SpecialTensors). 
 }

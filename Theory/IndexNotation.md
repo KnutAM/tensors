@@ -81,7 +81,7 @@ The "Levi-Civita symbol" may also be denoted the "permutation symbol". While it 
 \begin{align}
 \varepsilon_{ijk} = \left\lbrace \begin{matrix} 
 \phantom{-}1 & \text{if }(i,j,k) \text{is (1,2,3), (2,3,1), or (3,1,2)} \\
--1 & \text{if }(i,j,k) \text{is (3,2,1), (2,1,3), or (3,2,1)} \\
+-1 & \text{if }(i,j,k) \text{is (3,2,1), (2,1,3), or (1,3,2)} \\
 \phantom{-}0 & \text{if any two indices are equal}
 \end{matrix}\right.
 \end{align}

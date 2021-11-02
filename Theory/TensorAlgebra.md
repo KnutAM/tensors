@@ -64,8 +64,9 @@ The single contraction is the "standard" matrix-vector product used when doing m
 \tf{A}:\tf{B} &= \tfind{A}{ijkl}\baseijkl : \tfind{B}{mnop} \fourbase{m}{n}{o}{p} \\
 & = \tfind{A}{ijkl} \tfind{B}{mnop} (\onebase{k} \cdot \onebase{m}) (\onebase{l} \cdot \onebase{n})\fourbase{i}{j}{o}{p}\\
 & = \tfind{A}{ijkl} \tfind{B}{mnop} \delta_{km} \delta_{ln} \fourbase{i}{j}{o}{p}\\
-& = \tfind{A}{ijkl} \tfind{B}{mnop} \fourbase{i}{j}{o}{p}
+& = \tfind{A}{ijkl} \tfind{B}{klop} \fourbase{i}{j}{o}{p}
 \end{align}
+In pure index notation, we have, if $\tf{C}=\tf{A}:\tf{B}$, that $\tfind{C}{ijop}=\tfind{A}{ijkl}\tfind{B}{klop}$.
 }{ *Additional examples*
 
 * Two 2nd order tensors, $\ts{a}:\ts{b}$ \\ $c = \ts{a}:\ts{b} = a_{ij} b_{ij}$

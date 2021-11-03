@@ -23,7 +23,7 @@ as for 2x2 and 3x3 matrices.
 
 ### Differentiation
 \begin{align}
-\diff{}{\ts{a}}\left[\det(\ts{a})\right] = \det(\ts{a})\tsi{a}
+\diff{}{\ts{a}}\left[\det(\ts{a})\right] = \det(\ts{a})\tsti{a}
 \end{align}
 
 

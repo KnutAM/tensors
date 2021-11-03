@@ -1,4 +1,5 @@
-@def title = "Tensor Analysis"
-@def tags = ["syntax", "code"]
++++
+ title = "Formulas"
++++
 
 # Theory

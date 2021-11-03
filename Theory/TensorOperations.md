@@ -86,7 +86,7 @@ Here the 2nd order identity tensor, $\ts{I}$ was used, see [Special Tensors](/Th
 $\tf{A}:\tfi{A}=\tf{I}=\delta_{ik}\delta_{jl}\baseijkl$}
 
 \todo{Should this be moved to computations?}
-Algorithms for determining the inverse of 4th order tensors are virtually non-existent. However, we may represent the entities in a 4th order tensor as a matrix using the [Voigt notation](), $\tfv{A}$. In this notation, the double contraction reduces to a regular matrix-matrix product: $\tf{A}:\tf{A}=\tfv{A}\cdot\tfv{A}$. Hence, to calculate the inverse of a 4th order tensor, it is usually necessary to convert to the Voigt format, calculate the inverse, and then convert back. 
+Algorithms for determining the inverse of 4th order tensors are virtually non-existent. However, we may represent the entities in a 4th order tensor as a matrix using the [Voigt representation](/Voigt/), $\tfv{A}$. In this notation, the double contraction reduces to a regular matrix-matrix product: $\tf{A}:\tf{A}$ is equivalent to $\tfv{A}\cdot\tfv{A}$. Hence, to calculate the inverse of a 4th order tensor, it is usually necessary to convert to the Voigt representation, calculate the inverse, and then convert back. 
 
 \label{determinant}
 ## Determinant, "$\det(\bullet)$"

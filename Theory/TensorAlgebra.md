@@ -116,3 +116,9 @@ If we instead would look at a sum, we can consider $\tf{A}:\left[\ts{b} + \ts{c}
 \tfind{A}{ijkl}\left[b_{kl} + c_{kl}\right] = \tfind{A}{ijkl} b_{kl} + \tfind{A}{ijkl} c_{kl}
 \end{align}
 Which holds as we are only considering summation and multiplication when working with the indices, i.e. $\tf{A}:\left[\ts{b} + \ts{c}\right]=\tf{A}:\ts{b} + \tf{A}:\ts{c}$
+
+# Cross product with vector
+For completeness, the cross product between a 2nd order tensor and a vector is given as 
+\begin{align}
+\ts{a}\times\tv{v} = a_{ij} v_k \baseij \times \onebase{k} = a_{ij} v_k \onebase{i} \otimes [\varepsilon_{jkm} \onebase{m}] = \varepsilon_{jkm} a_{ij} v_k \twobase{i}{m}
+\end{align}

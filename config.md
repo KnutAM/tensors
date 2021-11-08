@@ -103,6 +103,10 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\tr}{\mathrm{tr}}
 \newcommand{\det}{\mathrm{det}}
 
+\newcommand{\grad}[1]{#1\otimes\tv{\nabla}}
+\newcommand{\div}[1]{#1\cdot\tv{\nabla}}
+\newcommand{\curl}[1]{-#1\times\tv{\nabla}}
+
 <!-- Decorations -->
 \newcommand{\dev}{^{ \mathrm{dev} } }
 \newcommand{\sph}{^{ \mathrm{sph} } }

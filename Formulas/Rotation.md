@@ -18,7 +18,7 @@ Single contraction from the left of each base vector with the rotation/coordinat
 Consider a rotation as a function of time, i.e. $\ts{R}(t)$. Then
 \begin{align*}
 \diff{\tst{R}\ts{R}}{t} = \ts{0} &= \diff{\tst{R}}{t}\ts{R} + \tst{R}\diff{\ts{R}}{t} \\
-\left[\tst{R}\diff{\ts{R}}{t}\right]\trans &= \tst{R}\diff{\ts{R}}{t} \Rightarrow \text{Skew symmetric}
+\left[\tst{R}\diff{\ts{R}}{t}\right]\trans &= -\tst{R}\diff{\ts{R}}{t} \Rightarrow \text{Skew symmetric}
 \end{align*}
 
 If we now consider rotation of vector $\tv{v}=\ts{R}(t) \cdot \tv{v}_0$ with time, starting at $\tv{v}_0$, we have
@@ -28,4 +28,4 @@ If we now consider rotation of vector $\tv{v}=\ts{R}(t) \cdot \tv{v}_0$ with tim
 \dot{\tv{v}} &= \ts{\omega} \tv{v}
 \end{align*}
 
-The skew symmetric tensor $\ts{\omega}$ is called the spin tensor.
+The skew symmetric tensor $\ts{\omega}$ is often called the spin tensor. 

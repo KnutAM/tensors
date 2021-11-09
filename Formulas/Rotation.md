@@ -11,7 +11,7 @@ Given the basis system $\basei$ and a rotated basis system $\tv{g}_i = \ts{R}\ba
 \ts{Q} = (\tv{g}_i \cdot \tv{e}_j) \tv{g}_i \otimes \tv{e}_j = R_{ij}\trans \tv{g}_i \otimes \tv{e}_j = \ts{I}
 \end{align*}
 
-## How to rotate / change basis system
+## How to rotate/change basis system
 Single contraction from the left of each base vector with the rotation/coordinate transformation tensor. In practice, left contraction with each free index. 
 
 ## Differentiation

@@ -120,7 +120,7 @@ It is also possible to define the curl for higher order tensors. Here we use the
 \begin{align}
 \text{curl}(\ts{a}) &= \curl{\ts{a}}
 \end{align}
-which is the same as for vectors. An important property of the curl of a second order tensor, is that
+which is the same as for vectors. An important property of the curl of a the gradient of a vector is
 \begin{align}
 \curl{\left[\grad{\tv{u}}\right]} = \ts{0}
 \end{align}

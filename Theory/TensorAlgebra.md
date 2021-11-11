@@ -81,13 +81,13 @@ The double contraction can loosely be thought of, for 2nd and 4th order tensors,
 \collaps{We may introduce special open products, that permutate the order of the basis vectors. Two common definitions for 2nd order tensors are
 \begin{align}
 \ts{a}\opu\ts{b} &= \left(a_{ik}\twobase{i}{k} \right) \opu \left(b_{jl} \twobase{j}{l}\right) \\
-                 &= a_{ik} b_{jl} \twobase{i}{k} \opu \twobase{j}{l} \\
+                 &= a_{ik} b_{jl} \left[\twobase{i}{k}\right] \opu \left[\twobase{j}{l}\right] \\
                  &= a_{ik} b_{jl} \baseijkl
 \end{align}
 If we have $\tf{C}=\ts{a}\opu\ts{b}$, then, in pure index notation, $\tfind{C}{ijkl}=a_{ik} b_{jl}$
 \begin{align}
 \ts{a}\opl\ts{b} &= \left(a_{il}\twobase{i}{l} \right) \opl \left(b_{jk} \twobase{j}{k}\right) \\
-                 &= a_{ik} b_{jl} \twobase{i}{l} \opu \twobase{j}{k} \\
+                 &= a_{il} b_{jk} \left[\twobase{i}{l}\right] \opl \left[\twobase{j}{k}\right] \\
                  &= a_{il} b_{jk} \baseijkl
 \end{align}
 If we have $\tf{C}=\ts{a}\opl\ts{b}$, then, in pure index notation, $\tfind{C}{ijkl}=a_{il} b_{jk}$

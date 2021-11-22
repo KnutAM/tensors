@@ -56,7 +56,7 @@ v_i\supscr{g} &= (\tv{g}_i \cdot \tv{e}_j) v_j\supscr{e}
 \begin{align}
 \ts{Q}\tv{v} &= (\tv{g}_i \cdot \tv{e}_j) (\tv{g}_i \otimes \tv{e}_j) \cdot (v_k\supscr{g} \tv{g}_k) \\
 &= (\tv{g}_i \cdot \tv{e}_j) \tv{g}_i (\tv{e}_j \cdot \tv{g}_k) v_k\supscr{g} \\
-v_i\supscr{g} &= (\tv{g}_i \cdot \tv{e}_j) (\tv{e}_j \cdot \tv{g}_k) v_k\supscr{e}
+&= Q\supscr{eg}_{ij} \left[Q\supscr{eg}\right]^{-1}_{jk} v_k\supscr{g} \tv{g}_i  = v_i\supscr{g} \tv{g}_i  = \tv{v}
 \end{align}
 Since $Q\supscr{eg}_{ij}=\tv{g}_i \cdot \tv{e}_j$ and $Q\supscr{ge}_{jk}=(Q\supscr{eg}_{jk})^{-1}=\tv{e}_j \cdot \tv{g}_k$, then $(\tv{g}_i \cdot \tv{e}_j) (\tv{e}_j \cdot \tv{g}_k)=\delta_{ik}$, and we have $v_i\supscr{g}=\delta_{ik}v_k\supscr{g}=v_i\supscr{g}$. So now we showed that $\ts{Q}\tv{v}=\tv{v}$. But this would, as mentioned, imply that $\ts{Q}=\ts{I}$. To check this, let's transform the tensor $\ts{Q}$, expressed in mixed bases, into the same bases
 \begin{align}

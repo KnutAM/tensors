@@ -25,7 +25,7 @@ as for 2x2 and 3x3 matrices.
 
 ### Differentiation
 \begin{align}
-\diff{\tsi{a}}{\ts{a}} = -\tsi{a}\opu\tsti{a}
+\pdiff{\tsi{a}}{\ts{a}} = -\tsi{a}\opu\tsti{a}
 \end{align}
 
 

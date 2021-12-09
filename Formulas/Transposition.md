@@ -18,7 +18,7 @@ title = "Transposition formulas"
 
 ### Differentiation
 \begin{align*}
-\diff{\tst{a}}{\ts{a}} = \ts{I}\opl\ts{I}
+\pdiff{\tst{a}}{\ts{a}} = \ts{I}\opl\ts{I}
 \end{align*}
 
 ## 4th order tensors (major transpose)

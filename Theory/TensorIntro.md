@@ -16,7 +16,7 @@ Let's look at another example involving differentiation: How to evaluate the fol
 \end{align}
 by using the chain rule, where $\nabla$ is the gradient operator. This operation is well known for scalar problems, i.e
 \begin{align}
-\nabla f(x,y,z) = \left[\diff{f}{x_1}, \diff{f}{x_2}, \diff{f}{x_3}\right]\Trans
+\nabla f(x,y,z) = \left[\pdiff{f}{x_1}, \pdiff{f}{x_2}, \pdiff{f}{x_3}\right]\Trans
 \end{align}
 
 But if we want to expand the expression, we need to write something like
@@ -27,9 +27,9 @@ But if we want to expand the expression, we need to write something like
 But what would taking the gradient of a vector mean? In vector calculus, we would need to define this, and it is sometimes denoted the *Jacobian matrix* of the vector field, defined as 
 \begin{align}
 \nabla\tv{u} = \begin{bmatrix}
-\diff{u_1}{x_1} & \diff{u_1}{x_2} & \diff{u_1}{x_3} \\
-\diff{u_2}{x_1} & \diff{u_2}{x_2} & \diff{u_2}{x_3} \\
-\diff{u_3}{x_1} & \diff{u_3}{x_2} & \diff{u_3}{x_3}
+\pdiff{u_1}{x_1} & \pdiff{u_1}{x_2} & \pdiff{u_1}{x_3} \\
+\pdiff{u_2}{x_1} & \pdiff{u_2}{x_2} & \pdiff{u_2}{x_3} \\
+\pdiff{u_3}{x_1} & \pdiff{u_3}{x_2} & \pdiff{u_3}{x_3}
 \end{bmatrix} \label{eq:vector_gradient}
 \end{align}
 

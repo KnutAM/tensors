@@ -88,9 +88,9 @@ Some operations wrt. the coordinates are so common that they have their own name
 \end{align}
 And we will define the vector operator $\tv{\nabla}$ as 
 \begin{align}
-\tv{\nabla} = \nabla_i \basei = \pdiff{}{x_{i}}
+\tv{\nabla} = \nabla_i \basei = \pdiff{}{x_{i}} \basei
 \end{align}
-The gradient of higher order tensors is then, e.g., $\grad{\tv{v}}$ and $\grad{\ts{a}}$.
+The gradient of higher order tensors is then possible to express as, e.g., $\grad{\tv{v}}$ and $\grad{\ts{a}}$.
 
 \collaps{As $\tv{\nabla}$ is an operator, we must be explicit about what operand it is operating on by using brackets (expand for examples).}{To clarify what operand the gradient is acting on in a larger expression, it can be necessary to enclose the entire expression in brackets:
 

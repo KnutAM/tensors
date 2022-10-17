@@ -1,5 +1,0 @@
-+++
- title = "Formulas"
-+++
-
-# Theory

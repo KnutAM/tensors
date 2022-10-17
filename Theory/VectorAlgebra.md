@@ -40,7 +40,7 @@ However, what if your two vectors are pointing in the same direction (but have d
 
 \todo{Add an illustration of linear dependence versus independence in 2d}
 
-\definition{With $i=1,2,\cdots,N$, the vectors $\tv{v}_i\in\set{V}$ are **linearly dependent** if there exists scalars $a_i\in\REAL$ such that $a_i \tv{v}_i = \tv{0}$. If no such scalars exists, the vectors $\tv{v}_i$ are **linearly independent**.}
+\definition{With $i=1,2,\cdots,N$, the vectors $\tv{v}_i\in\set{V}$ are **linearly dependent** if there exists scalars $a_i\in\REAL:\,a_i a_i > 0$ (i.e. at least one $a_i\neq0$) such that $a_i \tv{v}_i = \tv{0}$). If no such scalars exists, the vectors $\tv{v}_i$ are **linearly independent**.}
 
 $\tv{v}=a_i\tv{v}_i$, which we just used, is called a **linear combination** of the vectors $\tv{v}_i$. (Recall the [Einstein summation convention](/Theory/IndexNotation/#einsteins_summation_convention))
 
@@ -57,7 +57,7 @@ From this definition, it follows that $\norm{\tv{u}} = \sqrt{\tv{u}\cdot\tv{u}}$
 
 When working with scalar products, the following algebraic rules apply
 
-* Distributive multiplication, $\tv{u}\cdot(\tv{v}+\tv{w}) = \tv{u}\cdot\tv{v} + \tv{u}\cdot\tv{w}$. \\*Note that this is in contrast to the associative addition*
+* Distributive multiplication, $\tv{u}\cdot(\tv{v}+\tv{w}) = \tv{u}\cdot\tv{v} + \tv{u}\cdot\tv{w}$.
 * Commutative multiplication, $\tv{u}\cdot\tv{v}=\tv{v}\cdot\tv{u}$
 * Associative wrt. multiplication with scalar, $a(\tv{u}\cdot\tv{v}) = (a\tv{u})\cdot\tv{v}$
 
@@ -120,7 +120,7 @@ Based on the definition of the cross product and the orthonormal coordinate syst
 \tv{e}_i\times\tv{e}_j = \left\lbrace\begin{matrix} \pm\tv{e}_k & i\neq j & k\neq i,j\\ \tv{0} & i=j & \end{matrix}\right.
 \end{align}
 
-Hence, the direction in the case that $i\neq j$ is not properly defined. This depends on the order of our basis vectors. We therefore need to introduce this order in our definition of our coordinate system and we will choose a right-handed coordinate system (see the illustration used to define the [cross product](#cross_product)). For a coordinate system, this implies that $\tv{e}_3=\tv{e}_1\times\tv{e}_2$. Using the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol), $\varepsilon_{ijk}$, we then have 
+(In three dimensions, for $i\neq j$, only one choice remains for $k\neq i,j$) However, the direction of $\pm\tv{e}_k$ in the case that $i\neq j$ is not properly defined. This depends on the order of our basis vectors. We therefore need to introduce this order in our definition of our coordinate system and we will choose a right-handed coordinate system (see the illustration used to define the [cross product](#cross_product)). For a coordinate system, this implies that $\tv{e}_3=\tv{e}_1\times\tv{e}_2$. Using the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol), $\varepsilon_{ijk}$, we then have 
 \begin{align}
 \tv{e}_i\times\tv{e}_j = \varepsilon_{ijk} \tv{e}_{k}
 \end{align}

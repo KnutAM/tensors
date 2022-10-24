@@ -45,3 +45,14 @@ and consequently $\delta_{ij}-\delta_{ji}=0_{ij}$ (the indices on the zero are o
 3\. The result will be a 2nd order object, e.g. $b_{li}=\delta_{kl}a_{ki}$. For each entry in $b_{li}$, 
 we must sum over the 3 values of $k$. However, $\delta_{kl}=0$ if $k\neq l$. Only when $k=l$ is $\delta_{kl}=1$. 
 I.e. $b_{li} = \delta_{1l}a_{1i}+\delta_{2l}a_{2i}+\delta_{3l}a_{3i}$. Only the term where $\delta_{kl}=1$ (i.e. $k=l$) will remain. It has the value $a_{li}$. Consequently, $\delta_{kl}a_{ki}=a_{li}$. In general, when we contract with $\delta_{ij}$ we can replace either $i$ or $j$ by $j$ or $i$ respectively in the factor we multiply with, and remove the $\delta_{ij}$ factor.}
+
+\collaps{**D) Levi-Civita**
+What do the following expressions evaluate to when the dimension is 3?
+1. $\epsilon_{mno}\delta_{ok}$
+2. $\epsilon_{mkk}$
+3. $\epsilon_{jki} + \epsilon_{ijk}$
+}{Answers
+1\. As we did earlier for the Kronecker delta, we know that $\delta_{ok}=1$ only when $o=k$ (otherwise zero),
+and hence, $\epsilon_{mno}\delta_{ok}=\epsilon_{mnk}$ \\
+2\. $\epsilon_{mkk} = \epsilon_{m11} + \epsilon_{m22} + \epsilon_{m33} = 0$\\
+3\. $\epsilon_{jki} = \epsilon_{ijk}$ following the permutation order, hence $\epsilon_{jki}+\epsilon_{ijk}=2\epsilon_{ijk}$}

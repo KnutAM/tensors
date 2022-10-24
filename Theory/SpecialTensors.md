@@ -3,7 +3,7 @@ title = "Special tensors"
 +++
 
 # Special tensors
-Some tensors have special properties and occur in many applications, for example identity tensors, $1$, $\ts{I}$, and $\tf{I}$, as well as the rotation tensor $\ts{Q}$. Below, these, and additional tensors with specific properties are introduced. 
+Some tensors have special properties and occur in many applications, for example identity tensors, $1$, $\ts{I}$, and $\tf{I}$, as well as the rotation tensor $\ts{R}$. Below, these, and additional tensors with specific properties are introduced. 
 
 ## Identity tensor
 The identity tensors for order 0, 2, and 4 are

@@ -65,7 +65,7 @@ Simplify the following expressions by using index notation
 3\. $\delta_{ij}[a_{ik} a_{kj}\trans] = \delta_{ij}[a_{ik} a_{jk}] = a_{ik} a_{ik} = \ts{a}:\ts{a}$
 }
 
-\collaps{**D) Invariants**\\
+\collaps{**E) Invariants**\\
 Test if the following expressions are invariant to rotations
 1. $\tv{v}\cdot\tv{u}$
 2. $\ts{a}:\ts{a}$

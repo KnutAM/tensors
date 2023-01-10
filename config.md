@@ -70,6 +70,7 @@ Add here global latex commands to use throughout your pages.
 \newcommand{\fourbase}[4]{\tv{e}_{#1}\otimes\tv{e}_{#2}\otimes\tv{e}_{#3}\otimes\tv{e}_{#4}}
 \newcommand{\basei}{\onebase{i}}
 \newcommand{\baseij}{\twobase{i}{j}}
+\newcommand{\baseji}{\twobase{j}{i}}
 \newcommand{\baseijkl}{\fourbase{i}{j}{k}{l}}
 
 \newcommand{\ta}[1]{\textcolor{red}{\mathrm{DEPRECIATED}}\boldsymbol{#1}}

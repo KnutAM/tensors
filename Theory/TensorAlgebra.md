@@ -12,10 +12,10 @@ If we work with indicial expressions, we just need to respect the rules of the [
 
 ## Open product, "$\otimes$"
 \collaps{The open product, also called "outer product" or "dyadic product", is a representation of multiple bases. Taking the open product between two tensors, $A$ and $B$, of arbitrary order, becomes
-\begin{align*}
+\begin{align}
 A\otimes B &= \left(A_{i_1\,i_2,\cdots,i_n} \twobase{i_1}{i_2}\cdots\onebase{i_n}\right) \otimes \left(B_{j_1\,j_2,\cdots,j_m} \twobase{j_1}{j_2}\cdots\onebase{j_m}\right)\\
 &= A_{i_1\,i_2,\cdots,i_n} B_{j_1\,j_2,\cdots,j_m} \twobase{i_1}{i_2}\cdots\onebase{i_n} \otimes \twobase{j_1}{j_2}\cdots\onebase{j_m}
-\end{align*}
+\end{align}
 Hence, this product doesn't actually "do" anything. It just represents multiple bases.
 In pure index notation, if we have e.g. $\tf{C}=\ts{a}\otimes\ts{b}$, then $\tfind{C}{ijkl}=a_{ij} b_{kl}$.
 }{

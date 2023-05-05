@@ -20,9 +20,9 @@ Hence, this product doesn't actually "do" anything. It just represents multiple 
 In pure index notation, if we have e.g. $\tf{C}=\ts{a}\otimes\ts{b}$, then $\tfind{C}{ijkl}=a_{ij} b_{kl}$.
 }{
 Another way to think is that $\baseij$ are 9 2nd order base tensors for a 2nd order tensor. I.e., $\baseij$ represents 9 orthogonal directions for a 2nd order tensor. Considering a particular base, e.g. $\twobase{1}{2}$, it can be represented in matrix form in the $\basei$ coordinate system, as
-\begin{align}
+\begin{align*}
 \left[ \twobase{1}{2} \right] = \begin{bmatrix} 0 & 1 & 0 \\ 0 & 0 & 0 \\ 0 & 0 & 0\end{bmatrix}
-\end{align}
+\end{align*}
 $\twobase{1}{2}$ is similar to a basis vector, $\basei$, except that we now have a 2nd order base tensor
 
 In pure index notation, the open product correspond to multiplying two index objects, say $b_i$ and $c_j$, with different free indices, i.e. $a_{ij} = b_i c_j$

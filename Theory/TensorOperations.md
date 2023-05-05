@@ -19,17 +19,17 @@ For zero and first order tensors, transposition is not defined or has no effect 
 When we take the transpose of a 2nd order tensor, the basis change order, but the indices remain the same. If both basis systems, $\onebase{i}$ and $\onebase{j}$ are the same, transposition is equivalent to to switching the indices on $a_{ij}$ to $a_{ji}$. When doing this in index notation, we implicitly assume that the basis vector order remains unchanged. 
 
 \collaps{Using the index notation, we can derive some important rules for transposed tensor expressions}{
-    \begin{align}
+    \begin{align*}
     \left[\ts{a}+\ts{b}\right]\trans &= \left[a_{ij}\baseij + b_{ij}\baseij\right]\trans = \left[[a_{ij}+b_{ij}]\baseij\right]\trans  \\
     &= (a_{ij}+b_{ij}) \twobase{j}{i} = a_{ij} \twobase{j}{i} + b_{ij} \twobase{j}{i} \\
     &= \tst{a} + \tst{b}
-    \end{align}
-    \begin{align}
+    \end{align*}
+    \begin{align*}
     \left[\ts{a}\ts{b}\right]\trans &= \left[a_{ij}\baseij \cdot b_{kl}\twobase{k}{l}\right]\trans \\
     &= a_{ij} b_{kl} \left[\tv{e}_j\cdot\tv{e}_k\right] [\twobase{i}{l}]\trans, \quad \tv{e}_j\cdot\tv{e}_k=\delta_{jk}=\tv{e}_k\cdot\tv{e}_j \\
     &= a_{ij} b_{kl} \left[\tv{e}_j\cdot\tv{e}_k\right] \twobase{l}{i} = b_{kl} \twobase{l}{k} \cdot a_{ij} \twobase{j}{i} \\
     &= \tst{b}\tst{a}
-    \end{align}
+    \end{align*}
 }
 
 We can also write the transposition directly on the index symbol, $a\trans_{ij}$. For a tensor with equal basis this is the same as transposition of the tensor. However, it might also be used in expressions when the indices are not contracted with basis vectors. Consider the expression $a_{ij} b_i = a\trans_{ji} b_i$, where in the first we contract $b$ with $a$'s first index, and in the second we contract with $a\trans$'s second index (the same as $a$'s first index). Hence, we have that $a_{ij} = a\trans_{ji}$
@@ -73,9 +73,9 @@ Here the 2nd order identity tensor, $\ts{I}$ was used, see [Special Tensors](/Th
 
 \collaps{Similar to the transposition there are relations for taking the inverse of a dot product between two tensors}{
     If we have the tensor $\ts{c}=\ts{a}\ts{b}$, then we check if $\tsi{c}=\tsi{b}\tsi{a}$ is a solution
-    \begin{align}
+    \begin{align*}
     \ts{I}=\ts{c}\tsi{c}=\ts{a}\ts{b}\tsi{b}\tsi{a}=\ts{a}\ts{I}\tsi{a}=\ts{a}\tsi{a}=\ts{I}
-    \end{align}
+    \end{align*}
     So yes! We see that $\tsi{c}=\tsi{b}\tsi{a}$ is actually true. Note the similarity to the transposition. 
     
     However, there is no easy relation for $\tsi{c}$ if $\ts{c}=\ts{a}+\ts{b}$!

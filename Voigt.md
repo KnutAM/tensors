@@ -46,13 +46,13 @@ A final solution is to use the so-called Mandel representation. It is not so com
 \end{align}
 
 \collaps{We can then verify that $\ts{b}:\ts{b}=\tsm{b}\cdot\tsm{b}$ and that $\tf{B}:\ts{b}$ is equivalent to $\tfm{B}\cdot\tsm{b}$}{Starting with $\ts{b}:\ts{b}$, we have
-\begin{align}
+\begin{align*}
 \ts{b}:\ts{b} = b_{ij}b_{ij} &= b_{11}^2 + b_{22}^2 + 2 b_{12}^2\\
 \tsm{b}\cdot\tsm{b} &= b_{11}^2 + b_{22}^2 + 2 b_{12}^2
-\end{align}
+\end{align*}
 
 Similarly, 
-\begin{align}
+\begin{align*}
 \tf{B}:\ts{b} &= \tfind{B}{ijkl}b_{kl} \\&= \begin{bmatrix} 
 \tfind{B}{1111}b_{11} + \tfind{B}{1122}b_{22} + 2\tfind{B}{1112}b_{12} & \tfind{B}{1211}b_{11} + \tfind{B}{1222}b_{22} + 2\tfind{B}{1212}b_{12} \\
 \tfind{B}{1211}b_{11} + \tfind{B}{1222}b_{22} + 2\tfind{B}{1212}b_{12} & \tfind{B}{2211}b_{11} + \tfind{B}{2222}b_{11} + 2\tfind{B}{2212}b_{12} 
@@ -62,6 +62,6 @@ Similarly,
 \tfind{B}{2211}b_{11} + \tfind{B}{2222}b_{11} + 2\tfind{B}{2212}b_{12} \\
 \sqrt{2}(\tfind{B}{1211}b_{11} + \tfind{B}{1222}b_{22} + 2\tfind{B}{1212}b_{12})
 \end{bmatrix}
-\end{align}
+\end{align*}
 where the last answer is the Mandel representation of the first result, which  
 }

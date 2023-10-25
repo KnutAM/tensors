@@ -107,7 +107,7 @@ so clearly the order of the vectors do not matter. Similarly, for the double con
 \end{align}
 we also have no difference if we flip the order. However, if we take the dot product between a 2nd and 1st order tensor, 
 \begin{align}
-\ts{a}\cdot\tv{u} = a_{ij} u_j = u_j a_{ij} \neq \tv{u}\cdot\ts{a}\; \forall\; \ts{a}
+\ts{a}\cdot\tv{u} = a_{ij} u_j \basei = u_j a_{ij} \basei \neq u_j a_{ji} \basei = \tv{u}\cdot\ts{a}\; \forall\; \ts{a}
 \end{align}
 The reason that the last relation is not equal for all $\ts{a}$, is that we contract the the last index of $\ts{a}$ with $\tv{u}$'s index. (Note that if $\ts{a}$ is [symmetric](/Theory/TensorOperations#transposition), then this would be an equality.)
 
@@ -115,7 +115,7 @@ If we instead would look at a sum, we can consider $\tf{A}:\left[\ts{b} + \ts{c}
 \begin{align}
 \tfind{A}{ijkl}\left[b_{kl} + c_{kl}\right] = \tfind{A}{ijkl} b_{kl} + \tfind{A}{ijkl} c_{kl}
 \end{align}
-Which holds as we are only considering summation and multiplication when working with the indices, i.e. $\tf{A}:\left[\ts{b} + \ts{c}\right]=\tf{A}:\ts{b} + \tf{A}:\ts{c}$
+which holds as we are only considering summation and multiplication when working with the indices, i.e. $\tf{A}:\left[\ts{b} + \ts{c}\right]=\tf{A}:\ts{b} + \tf{A}:\ts{c}$
 
 # Cross product with vector
 For completeness, the cross product between a 2nd order tensor and a vector is given as 

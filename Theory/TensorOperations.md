@@ -90,14 +90,27 @@ Algorithms for determining the inverse of 4th order tensors are virtually non-ex
 
 \label{determinant}
 ## Determinant, "$\det(\bullet)$"
-As for the inverse, the determinant is only defined for even order tensors. For scalars, it is trivial such that $\det(a)=a$. For a 2nd order tensor, it is straight-forward to calculate as the determinant of a matrix by filling the matrix by the tensor coefficients, e.g. in 2d:
+The standard determinant is only defined for 2nd order tensors. However, it is possible to generalize to higher dimensions. 
+For a 2nd order tensor, it is straight-forward to calculate as the determinant of a matrix by filling the matrix by the tensor coefficients, e.g. in 2d:
 
 \begin{align}
 \ts{a}=a_{ij} \baseij, \quad \left[a_{ij}\right] = \begin{bmatrix} a_{11} & a_{12} \\ a_{21} & a_{22} \end{bmatrix} \\
 \det(\ts{a}) = a_{11} a_{22} - a_{21} a_{12}
 \end{align}
 
-Similar to the inverse of 4th order tensors, the determinant is normally not computed on a fourth-order tensor directly but on its Voigt representation.
+We can also define this by using the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol),
+
+\begin{align}
+\text{2d: }\det(\ts{a}) &= \frac{1}{2!} \varepsilon_{i_1 j_1} \varepsilon_{i_2 j_2} a_{i_1 i_2} a_{j_1 j_2}\\
+\text{3d: }\det(\ts{a}) &= \frac{1}{3!} \varepsilon_{i_1 j_1 k_1} \varepsilon_{i_2 j_2 k_2} a_{i_1 i_2} a_{j_1 j_2} a_{k_1 k_2}
+\end{align}
+
+which allows us to generalize to higher tensor orders, such as for a 4th order tensor in 3d:
+
+\begin{align}
+\det(\ts{A}) &= \frac{1}{3!} \varepsilon_{i_1 j_1 k_1} \varepsilon_{i_2 j_2 k_2} \varepsilon_{i_3 j_3 k_3} \varepsilon_{i_4 j_4 k_4} A_{i_1 i_2 i_3 i_4} A_{j_1 j_2 j_3 j_3} A_{k_1 k_2 k_3 k_4}
+\end{align}
+
 
 \label{exponentiation}
 ## Exponentiation, "$\bullet^n$"

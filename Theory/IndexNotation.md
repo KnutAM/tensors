@@ -77,15 +77,20 @@ k=2: \quad A_{ij} \delta_{j2} &= A_{i1}\delta_{12} + A_{i2}\delta_{22} = A_{i2},
 \end{align}
 
 ## Levi-Civita symbol
-The "Levi-Civita symbol" may also be denoted the "permutation symbol". While it can be defined in arbitrary order, we will only consider it as a 3rd order symbol which is defined as
+The "Levi-Civita symbol" may also be denoted the "permutation symbol". While it can be defined in arbitrary order, we will only consider the definitions for 2nd and 3rd orders,
 \begin{align}
-\varepsilon_{ijk} = \left\lbrace \begin{matrix} 
+\varepsilon_{ij} &= \left\lbrace \begin{matrix} 
+\phantom{-}1 & \text{if} & (i,j) = (1,2)\\
+-1 & \text{if} & (i,j) = (2,1) \\
+\phantom{-}0 & \text{if} &  i = j
+\end{matrix}\right.\\
+\varepsilon_{ijk} &= \left\lbrace \begin{matrix} 
 \phantom{-}1 & \text{if }(i,j,k) \text{is (1,2,3), (2,3,1), or (3,1,2)} \\
 -1 & \text{if }(i,j,k) \text{is (3,2,1), (2,1,3), or (1,3,2)} \\
-\phantom{-}0 & \text{if any two indices are equal}
+\phantom{-}0 & \text{else (if any two indices are equal)}
 \end{matrix}\right.
 \end{align}
-The following illustration from Wikipedia illustrates the sign convention, 
+The following illustration from Wikipedia illustrates the sign convention for 3rd order, 
 
 ~~~
 <a title="Maschen, CC0, via Wikimedia Commons" href="https://commons.wikimedia.org/wiki/File:Permutation_indices_3d_numerical.svg"><img width="50px" alt="Permutation indices 3d numerical" src="https://upload.wikimedia.org/wikipedia/commons/5/50/Permutation_indices_3d_numerical.svg"></a>

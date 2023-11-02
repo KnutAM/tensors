@@ -28,4 +28,7 @@ as for 2x2 and 3x3 matrices.
 
 
 ## 4th order tensors
-Refer to the Voigt matrix representation and linear algebra. 
+\begin{align}
+\text{2d: }\det(\ts{A}) &= \frac{1}{2!} \varepsilon_{i_1 j_1} \varepsilon_{i_2 j_2} \varepsilon_{i_3 j_3} \varepsilon_{i_4 j_4} A_{i_1 i_2 i_3 i_4} A_{j_1 j_2 j_3 j_3} \\
+\text{3d: }\det(\ts{A}) &= \frac{1}{3!} \varepsilon_{i_1 j_1 k_1} \varepsilon_{i_2 j_2 k_2} \varepsilon_{i_3 j_3 k_3} \varepsilon_{i_4 j_4 k_4} A_{i_1 i_2 i_3 i_4} A_{j_1 j_2 j_3 j_3} A_{k_1 k_2 k_3 k_4}
+\end{align}

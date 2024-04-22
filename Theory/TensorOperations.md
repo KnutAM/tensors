@@ -101,8 +101,8 @@ For a 2nd order tensor, it is straight-forward to calculate as the determinant o
 We can also define this by using the [*Levi-Civita symbol*](/Theory/IndexNotation/#levi-civita_symbol),
 
 \begin{align}
-\text{2d: }\det(\ts{a}) &= \frac{1}{2!} \varepsilon_{i_1 j_1} \varepsilon_{i_2 j_2} a_{i_1 i_2} a_{j_1 j_2}\\
-\text{3d: }\det(\ts{a}) &= \frac{1}{3!} \varepsilon_{i_1 j_1 k_1} \varepsilon_{i_2 j_2 k_2} a_{i_1 i_2} a_{j_1 j_2} a_{k_1 k_2}
+\text{2d: }\det(\ts{a}) &= \frac{1}{2!} \varepsilon_{i_1 j_1} \varepsilon_{i_2 j_2} a_{i_1 i_2} a_{j_1 j_2} = \varepsilon_{ij} a_{i1} a_{j2} \\
+\text{3d: }\det(\ts{a}) &= \frac{1}{3!} \varepsilon_{i_1 j_1 k_1} \varepsilon_{i_2 j_2 k_2} a_{i_1 i_2} a_{j_1 j_2} a_{k_1 k_2} = \varepsilon_{ijk} a_{i1} a_{j2} a_{k3}
 \end{align}
 
 which allows us to generalize to higher tensor orders, such as for a 4th order tensor in 3d:

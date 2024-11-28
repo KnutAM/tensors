@@ -112,7 +112,7 @@ Divergence of higher order tensors is not common. As for the gradient, brackets 
 ## Curl
 The curl of a vector field, $\tv{v}(\tv{x})$, is defined as
 \begin{align}
-\\text{curl}(\tv{v}) &= \curl{\tv{v}} = - \pdiff{v_i}{x_j} \varepsilon_{ijk} \tv{e}_k
+\text{curl}(\tv{v}) &= \curl{\tv{v}} = - \pdiff{v_i}{x_j} \varepsilon_{ijk} \tv{e}_k
 \end{align}
 This operation is common in fluid mechanics to find the rotation of a velocity field, $\tv{v}$. 
 

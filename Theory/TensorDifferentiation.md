@@ -15,7 +15,7 @@ Here, constant implies that the base vectors are constant in space.
 Hence, it suffices to differentiate the coefficients as the derivative of each base vector is zero. 
 In general, for an $N$th order $\boldsymbol{y} = y_{i_1 i_2 \cdots i_N}\onebase{i_1}\otimes\onebase{i_2}\otimes\cdots\otimes\onebase{i_N}$ and an $M$th order $\boldsymbol{x} = x_{j_1 j_2 \cdots j_M}\onebase{j_1}\otimes\onebase{j_2}\otimes\cdots\otimes\onebase{j_M}$, we have that
 \begin{align}
-\pdiff{\boldsymbol{y}}{\boldsymbol{x}} &= \left[\pdiff{y_{i_1 i_2 \cdots i_N}}{x_{j_1 j_2 \cdots j_M}}\right] \onebase{i_1}\otimes\onebase{i_2}\otimes\otimes\onebase{i_N}\otimes\onebase{j_1}\otimes\onebase{j_2}\otimes\cdots\otimes\onebase{j_M}
+\pdiff{\boldsymbol{y}}{\boldsymbol{x}} &= \left[\pdiff{y_{i_1 i_2 \cdots i_N}}{x_{j_1 j_2 \cdots j_M}}\right] \onebase{i_1}\otimes\onebase{i_2}\otimes\cdots\otimes\onebase{i_N}\otimes\onebase{j_1}\otimes\onebase{j_2}\otimes\cdots\otimes\onebase{j_M}
 \end{align}
 
 \collaps{Furthermore, since we can consider each free coefficient, e.g., $u_1$, as a scalar value, we can apply basic calculus rules, such as the chain and product rules. Even when considering dummy (summation) indices, these rules hold (expand to see an example).}{Consider the following in 2d: 

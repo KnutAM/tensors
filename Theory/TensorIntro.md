@@ -21,7 +21,7 @@ by using the chain rule, where $\nabla$ is the gradient operator. This operation
 
 But if we want to expand the expression, we need to write something like
 \begin{align}
-\nabla(\tv{u}\cdot\tv{v}) = \tv{v}\Trans \nabla\tv{u} + \tv{u}\Trans \nabla\tv{v} \label{eq:vector_gradient_dot}
+\nabla(\tv{u}\cdot\tv{v}) = \left[\tv{v}\Trans \nabla\tv{u} + \tv{u}\Trans \nabla\tv{v}\right]\Trans \label{eq:vector_gradient_dot}
 \end{align}
 
 But what would taking the gradient of a vector mean? In vector calculus, we would need to define this, and it is sometimes denoted the *Jacobian matrix* of the vector field, defined as 
